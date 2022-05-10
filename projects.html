@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		h1{
+			text-align: center; 
+			width: 100%;
+    		font-size: 70px;
+    		font-family: "retro","retro2", Arial;
+		}
+		h5{
+			text-align: center; 
+			width: 80%;
+    		font-size: 30px;
+    		padding-top: 15px;
+    		margin: 0 auto;
+    		font-family: "retro","retro2", Arial;
+    		letter-spacing: 2px;
+		}
+		h6{
+			text-align: left; 
+			width: 85%;
+    		font-size: 22px;
+    		margin: 0 auto;
+    		font-family: "retro","retro2", Arial;
+    		letter-spacing: 2px;
+		}
+		p{
+			width: 85%;
+    		padding-top: 15px;
+			text-align: center; 
+    		margin: 0 auto;
+    		font-size: 20px;
+    		font-family: serif;
+    		letter-spacing: 2px;
+    		-webkit-font-smoothing: none;
+		}
+		body{
+			text-align: left;
+			color:white;
+			background-color: #131718;
+			background-repeat: no-repeat;
+        }
+        /* Override the background color of the dropdown Button */
+		.dropbtn { background-color: #131718; }
+		/* Override color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #3CB4D2;}
+		#projectsWrap{
+			max-width: 90%; 
+			padding-left: 10%;
+			padding-right: 10%;
+			min-height: 800px;
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-around;
+		}
+		#projectWrap{
+			padding-top: 50px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		#project{
+			width: 380px;
+			height: 500px;
+    		border-radius: 8px;
+			outline: solid 1px #287F8B;
+			background-color: rgb(25, 29, 30);
+			/*box-shadow: 0 0 3pt 2pt #3CB4D2;*/
+		}
+	</style>
+</head>
+<body>
+	<div class = 'top'>
+    	<div class="dropdown">
+      		<button class="dropbtn">
+        		<img src="menu.png" style=" width: 50px; height: auto;">
+     	 	</button>
+      		<div class="dropdown-content">
+		        <a href="index.html">Homepage</a>
+		        <a href="AboutMe.html">About Me</a>
+		        <a href="projects.html" style="color: #287F8B">Projects</a>
+		        <a href="https://www.linkedin.com/in/brian-chen-1267b6220/">Experience</a>
+		        <a href="Connect.html">Connect</a>
+      		</div>
+    	</div>
+    
+	    <div class='nav'>
+	      <a style="cursor: pointer;" href="https://www.linkedin.com/in/brian-chen-1267b6220/">
+	      <img src="linkedin.png" style="width: 30px; height: auto;"></a>
+	      <a style="cursor: pointer;" href="https://www.instagram.com/brian._yc/"> 
+	      <img src="ig2.png" style="width: 30px; height: auto;"> </a>
+	      <a style="cursor: pointer;" href="AboutMe.html"> Connect </a>
+    	</div>
+  	</div>
+  	<h1>Projects</h1>
+  	<div id='projectsWrap'>
+  		<div id='projectWrap'>
+  			<div id='project'>
+  				<br><h5>Autonomous &nbsp;Pi- Car</h5><br>
+  				<p>Built a custom RC car with a webcam on top and raspberyPi inside. Utilized tensorflow and OpenCV to construct an autonomous driving program that drives within lane lines and adjusts speed according to speed signs, traffic lights, and pedestrians on the road. </p>
+  				<br><br><br><br>
+  				<h6>language used:</h6>
+  				<h6>Python</h6>
+			</div>
+  		</div>
+  		<div id='projectWrap'>
+  			<div id='project'>
+  				<br><h5>Chrome &nbsp;Dino &nbsp;Game &nbsp;AI</h5><br>
+  				<p>Designed an AI program that can play Google Chrome's dino game by itself. Created an interface between Chrome and our program using Selenium. Collected a large number of screenshots of human gameplay with human inputs at the time to train our core model using a convolutional neural network (CNN). </p>
+  				<br><br>
+  				<h6>languages used:</h6>
+  				<h6>Python</h6><h6>Javascript</h6>
+			</div>
+  		</div>
+  		<div id='projectWrap'>
+  			<div id='project'>
+  				<br><h5>Optimal Tourist RoutE</h5><br>
+  				<p>Constructed a program which, given the coordinates of a list of tourist sites, finds the shortest path that connects all of them. Algorithm constructed using permutation generation and pruning with nearest insertion TSP (traveling salesman problem), backtracking, and branch & bound. </p>
+  				<br><br>
+  				<h6>language used:</h6>
+  				<h6>C++</h6>
+			</div>
+  		</div>
+  		<div id='projectWrap'>
+  			<div id='project'>
+  				<br><h5>Elevator &nbsp;Game +&nbsp;AI</h5><br>
+  				<p>The elevators game allows the player to control elevators in a building with the goal of delivering the most people to their desired destination floors while minimizing the wait times of those people. Created an artificial intelligence program that moves the elevators in a manner that maximized people transported while minimizing their wait times.</p>
+  				<br><br>
+  				<h6>language used:</h6>
+  				<h6>C++</h6>
+			</div>
+  		</div>
+  		<div id='projectWrap'>
+  			<div id='project'>
+  				<br><h5>Ethical Hacking</h5><br>
+  				<p>Built backdoors, keyloggers, vulnerability scanners, email scrapers, and ARP spoofers. Fun fact: I installed a backdoor on my little sister's laptop  to monitor her screen with her her knowing so my parents could make sure she wasn't watching Korean TV shows when she should be doing homework.</p>
+  				<br><br><br><br><br>
+  				<h6>language used:</h6>
+  				<h6>Python</h6>
+			</div>
+  		</div>
+  		<div id='projectWrap'>
+  			<div id='project'>
+  				<br><h5>SQL simulator</h5><br>
+  				<p>Designed and wrote a program that emulates a relational database with an interface based on a subset of a standard query language (SQL). Evaluated the runtime and storage tradeoffs for storing and accessing data contained in different data structures.</p>
+  				<br><br><br><br><br><br>
+  				<h6>languages used:</h6>
+  				<h6>C</h6><h6>C++</h6>
+			</div>
+  		</div>
+  		<div id='projectWrap'>
+  			<div id='project'>
+  				<br><h5>Pipelined<br>
+  				RISC-V &nbsp;CPU</h5><br>
+  				<p>Implemented a compiler that compiles assembly code into machine code, a linker that combines multiple machine code files, and a pipelined processor with internal data forwarding. Finally, a simulator combines these programs to simulate a complete 32-bit RISC processor that outputs the states of the processor and main memory along the way. </p>
+  				<br>
+  				<h6>languages used:</h6>
+  				<h6>C</h6><h6>Assembly</h6>
+			</div>
+  		</div>
+  		<div id='projectWrap'>
+  			<div id='project'>
+  				<br><h5>Hot100 &nbsp;web &nbsp;scraper</h5><br>
+  				<p>Designed an web-scraping program that can collect all the (or a specified number of) top songs from a specified period of time from the hot 100 website (https://www.billboard.com/charts
+  				/hot-100/). Designed another web-scraping program that can retrieve the lyrics to all the songs collected from the previous program.</p>
+  				<br><br><br>
+  				<h6>language used:</h6>
+  				<h6>Python</h6>
+			</div>
+  		</div>
+  	</div>
+
+
+
+
+
+
+</body>
+</html>

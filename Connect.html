@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connect</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		h1{
+			text-align: center; 
+			width: 100%;
+    		font-size: 70px;
+    		font-family: "retro","retro2", Arial;
+    		letter-spacing: 2px;
+		}
+		h2{
+			text-align: center; 
+			width: 100%;
+    		font-size: 50px;
+    		font-family: "retro","retro2", Arial;
+    		letter-spacing: 2px;
+    		margin: 0 auto;
+		}
+		h3{
+			text-align: center; 
+			text-decoration-color: green;
+			width: 100%;
+    		font-size: 30px;
+    		font-family: "retro","retro2", Arial;
+    		letter-spacing: 2px;
+		}
+		h5{
+			text-align: center; 
+			width: 100%;
+    		font-size: 30px;
+    		padding-top: 15px;
+    		margin: 0 auto;
+    		font-family: "retro","retro2", Arial;
+    		letter-spacing: 2px;
+      		text-decoration: none;
+		}
+		h6{
+			text-align: left; 
+			width: 85%;
+    		font-size: 22px;
+    		margin: 0 auto;
+    		font-family: "retro","retro2", Arial;
+    		letter-spacing: 2px;
+		}
+		p{
+			width: 85%;
+    		padding-top: 15px;
+			text-align: center; 
+    		margin: 0 auto;
+    		font-size: 20px;
+    		font-family: serif;
+    		letter-spacing: 2px;
+    		-webkit-font-smoothing: none;
+		}
+		body{
+			text-align: left;
+			color:white;
+			background-color: #131718;
+			background-repeat: no-repeat;
+        }
+        /* Override the background color of the dropdown Button */
+		.dropbtn { background-color: #131718; }
+		/* Override color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #3CB4D2;}
+		#connectsWrap{
+			max-width: 90%; 
+			padding-left: 10%;
+			padding-right: 10%;
+			min-height: 800px;
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-around;
+			padding-bottom: 80px;
+		}
+		#connectWrap{
+			padding-top: 50px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		#connect{
+			width: 200px;
+			min-height: 500px;
+			background-image: url("pipe.png");
+  			background-position: center;
+			background-repeat: no-repeat;
+      		text-decoration: none;
+			/*box-shadow: 0 0 3pt 2pt #3CB4D2;*/
+		}
+		#connect:hover{height: 550px;}
+		#connectlink{
+			color: white;
+      		text-decoration: none;
+		}
+
+		input[type=text], select, textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #163d47;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 6px;
+			margin-bottom: 16px;
+			resize: vertical;
+			color: white;
+			background-color: #131718;
+		}
+
+		input[type=submit] {
+			background-color: #287F8B;
+			color: white;
+    		font-family: "retro","retro2", Arial;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			color: white;
+		}
+
+		input[type=submit]:hover {
+			background-color: #3CB4D2;
+		}
+
+		.container {
+    		font-family: "retro","retro2", Arial;
+			border-radius: 5px;
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class = 'top'>
+    	<div class="dropdown">
+      		<button class="dropbtn">
+        		<img src="menu.png" style=" width: 50px; height: auto;">
+     	 	</button>
+      		<div class="dropdown-content">
+		        <a href="index.html">Homepage</a>
+		        <a href="AboutMe.html">About Me</a>
+		        <a href="projects.html">Projects</a>
+		        <a href="https://www.linkedin.com/in/brian-chen-1267b6220/">Experience</a>
+		        <a href="Connect.html" style="color: #287F8B">Connect</a>
+      		</div>
+    	</div>
+    
+	    <div class='nav'>
+    	</div>
+  	</div>
+  	<h1>Contact Me &nbsp;:D</h1>
+  	<div id='connectsWrap'>
+  		<div id='connectWrap'>
+  			<div style="width: 200px; min-height: 500px; background-image: url('pipe.png'); background-position: center; background-repeat: no-repeat; text-decoration: none;">
+  				<h5>Call Me</h5>
+  				<h5>734 604 8505</h5>
+  				<img src="plant.gif" style="width: 100px; height: auto; padding-top: 40px; padding-left: 50px;">
+			</div>
+  		</div>
+  		<div id='connectWrap'>
+  			<a id = "connectlink" href="https://www.linkedin.com/in/brian-chen-1267b6220/">
+				<div id='connect'>
+  					<h5>Linkedin</h5>
+				</div>
+			</a>
+  		</div>
+  		<div id='connectWrap'>
+			<a id = "connectlink" href="https://github.com/BrianChen0527">
+	  			<div id='connect'>
+	  				<h5>Github</h5>
+				</div>
+			</a>
+  		</div>
+  		<div id='connectWrap'>
+  			<a id = "connectlink" href="mailto:brianc.boston@gmail.com">
+	  			<div id='connect'>
+	  				<h5>email</h5>
+	  				
+				</div>
+			</a>
+  		</div>
+  		<div id='connectWrap'>
+  			<a id = "connectlink" href="https://open.spotify.com/user/brianc.boston">
+  				<div id='connect'>
+  					<h5>Spotify</h5>
+				</div>
+			</a>
+  		</div>
+  	</div>
+	<h2>Have any questions or want to connect<img src="undergroundBlock.jpg" style="width: 50px; height: auto;"></h2> 
+	<h3>Please reach out!</h3>
+
+	<div class="container">
+	  <form action='mailto:brianc.boston@gmail.com'>
+	    <label for="fname">First Name</label>
+	    <input type="text" id="fname" name="fname" style='font-family: "retro","retro2", Arial;' placeholder="Your &nbsp;name..">
+
+	    <label for="lname">Last Name</label>
+	    <input type="text" id="lname" name="lname" style='font-family: "retro","retro2", Arial;' placeholder="Your &nbsp;last &nbsp;name..">
+
+	    <label for="email">Email</label>
+	    <input type="text" id="email" name="email" style='font-family: "retro","retro2", Arial;' placeholder="Your &nbsp;Email..">
+		
+		<label for="subject">Subject</label>
+	    <input type="text" id="subject" name="subject" style='font-family: "retro","retro2", Arial;' placeholder="Your &nbsp;Email..">
+	    
+	    <label for="message">Message</label>
+	    <textarea id="message" name="message" style='
+	    height:200px' placeholder="Message" ></textarea>
+
+	    <input type="submit" value="Send">
+	  </form>
+	</div>
+</body>
+</html>
