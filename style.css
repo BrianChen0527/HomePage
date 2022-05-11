@@ -3,7 +3,7 @@
 @import url('http://fonts.cdnfonts.com/css/common-pixel');
 @font-face {
     font-family: 'retro';
-    src: URL("../My_Websites/ARCADECLASSIC.TTF") format('truetype');
+    src: URL("../Yngchch.github.io/ARCADECLASSIC.TTF") format('truetype');
 } 
 @font-face {
     font-family: 'retro2';
@@ -11,7 +11,7 @@
 }  
 @font-face {
     font-family: 'FFFFORWARD';
-    src: URL("../My_Websites/FFFFORWA.TTF") format('truetype');
+    src: URL("../Yngchch.github.io/FFFFORWA.TTF") format('truetype');
 } 
 
 
@@ -92,7 +92,7 @@
     transition: transform .3s; /* Animation time */
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {-webkit-transform: scale(1.05); background-color: #FF8844;}
+.dropdown-content a:hover {-webkit-transform: scale(1.05); color: #FF8844;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}

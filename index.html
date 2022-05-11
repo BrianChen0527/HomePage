@@ -21,8 +21,7 @@
 			font-family: Verdana, Arial, Times New Roman;
 		}
 		body{
-      max-height: 1100px;
-      min-height: 1100px;
+      height: 2000px;
 			background: url("mario.jpg");
       background-repeat:no-repeat;
 		}
@@ -41,9 +40,9 @@
       min-width: 784px;
       min-height: 344px;
       max-width: 48%;  /* combines with the width of .dropdown (12%) */
-      width: 400px;
-      padding-left: 180px;
-      padding-top: 60px;
+      padding-left: 12%;
+      padding-top: 210px;
+      padding-bottom:  300px;
       text-align: center;
     }
     .title:hover{
@@ -59,6 +58,7 @@
       text-align: center;
       background: url('title.png');
       transition: transform .2s; /* Animation time */
+      text-shadow: solid black 5px 5px;
     }
     .coin{
       padding-left: 400px;
@@ -78,14 +78,15 @@
     }
 
     #linkedinWrap{
-      max-height: 100%;
-      padding-top: 300px;
-      padding-left: 240px;
+      width:  100%;
+      padding-top:  300px;
+      padding-bottom:  200px;
+      padding-left: 800px;
     }
     /* linkedin button animation */
-    #linkedin{ transition: transform .3s; }
     #linkedinWrap img{animation: magnified 7s infinite;}
-    #linkedin:hover{ transform: scale(1.1); }
+    #lin{transition: transform .3s; }
+    #lin:hover{transform: scale(1.1); }
 
     #resume{
       color: white;
@@ -95,7 +96,7 @@
     #instaWrap{
       max-height: 100%;
       padding-top: 40px;
-      padding-left: 590px;
+      padding-left: 170px;
     }
     /* instagram button animation */
     #insta{ transition: transform .3s; }
@@ -120,7 +121,7 @@
   <div class = 'top'>
     <div class="dropdown">
       <button class="dropbtn">
-        <img src="menu.png" style=" width: 50px; height: auto;">
+        <img src="menu.png" style=" width: 80px; height: auto;">
       </button>
       <div class="dropdown-content">
         <a href="index.html" style="color: #D9591C">Homepage</a>
@@ -132,11 +133,7 @@
     </div>
     
     <div class='nav'>
-      <a style="cursor: pointer;" href="https://www.linkedin.com/in/brian-chen-1267b6220/">
-      <img src="linkedin.png" style="width: 30px; height: auto;"></a>
-      <a style="cursor: pointer;" href="https://www.instagram.com/brian._yc/"> 
-      <img src="ig2.png" style="width: 30px; height: auto;"> </a>
-      <a style="cursor: pointer;" href="AboutMe.html"> Connect </a>
+      <a style="cursor: pointer;" href="Connect.html"> Connect </a>
     </div>
 
   </div>
@@ -151,10 +148,10 @@
         </div>
       </a>
     </div>
-    <div id="linkedinWrap">
-      <div id="linkedin">
-        <a href="https://www.linkedin.com/in/brian-chen-1267b6220/"><img src="linkedin.jpeg" style="height: 80px; width: auto;"></a>
-      </div>
+  </div>
+  <div id="linkedinWrap">
+    <div id="linkedin">
+        <a href="https://www.linkedin.com/in/brian-chen-1267b6220/"><img src="linkedin.jpeg" id="lin" style="height: 80px; width: auto;"></a>
     </div>
   </div>
   <div id="socials">
@@ -168,8 +165,6 @@
         <a href="contacts.html"><img src="blocks.png" style="height: 80px; width: auto;"></a>
       </div>
     </div>
-    
-
   </div>
   <body>
 
