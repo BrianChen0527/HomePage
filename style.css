@@ -28,7 +28,8 @@
     clear: none;
 }
 .nav{
-    width: 90%;  
+    width: 90%; 
+    padding-left: 600px;
     float: right;
     overflow: hidden;
     font-size: 30px;
