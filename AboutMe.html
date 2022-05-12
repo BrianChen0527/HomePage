@@ -22,8 +22,6 @@
 			width: 100%;
     		font-size: 50px;
     		font-family: "retro","retro2", Arial;
-    		position: absolute;
-			top: 50px;
 		}
 		body{
 			text-align: left;
@@ -34,9 +32,6 @@
 		.dropbtn { background-color: #131718; }
 		/* Override color of dropdown links on hover */
 		.dropdown-content a:hover {color: #3CB4D2;}
-		.dropdown-content a {
-    		background-color: #131718;
-		}
 		#geolocation{
 			text-align: center; 
 			font-family: "retro", "retro2", Arial; 
@@ -59,10 +54,10 @@
 			-webkit-font-smoothing : none;
 		}
 		#skillsWrap{
+			width: 100%;
 			padding-left: 100px;
 			padding-top: 40px;
 			display: flex;
-			float: left;
 		}
 		#proficiency{
 			text-align: left; 
@@ -74,14 +69,16 @@
 			display: block;
             margin-bottom: 1.3em;
 		}
-		.mySlides {display: none}
+		.mySlides {
+			display: none;
+			padding-top: 141px;
+		}
 		img {vertical-align: middle;}
 
 		/* Slideshow container */
 		.slideshow-container {
 			width: 100%;
 			min-height: 330px;
-			padding-top: 141px;
 			position: relative;
 			margin: 0 auto;
 		}
@@ -91,10 +88,10 @@
 			cursor: pointer;
 			position: absolute;
 			top: 50%;
-			width: 10%;
+			width: 30px;
 			color: white;
 			font-weight: bold;
-			font-size: 18px;
+			font-size: 28px;
 			transition: 0.6s ease;
 			border-radius: 0 3px 3px 0;
 			user-select: none;
@@ -119,11 +116,9 @@
 		/* Caption text */
 		.text {
 			color: #f2f2f2;
-			text-align: left; 
 			width: 100%;
     		font-size: 30px;
     		font-family: "retro","retro2", Arial;
-			margin: 25 auto;
 			position: absolute;
 			top: 40px;
 			width: 100%;
@@ -138,7 +133,7 @@
 			font-family: "retro","retro2", Arial;
 			position: absolute;
 			padding-left: 45%;
-			bottom: 0;
+			bottom: -30px;
 		}
 
 		/* The dots/bullets/indicators */
@@ -187,49 +182,49 @@
 	  	<div class='undergroundContainer'>
 	  		<div id='intro'>
 	  			<div class="slideshow-container">
-					<div class="mySlides fade">
-						<div class="numbertext">1 / 6</div>
+					<div class="mySlides">
 						<img src="scene1.jpg" style="width:700px;">
 						<div class="text">
 							Hello! My name is Ying-Chi Chen, but my friends just call me Brian.
 						</div>
+						<div class="numbertext">1 / 6</div>
 					</div>
 
-					<div class="mySlides fade">
-						<div class="numbertext">2 / 6</div>
+					<div class="mySlides">
 						<img src="scene2.jpg" style="width:700px;">
 						<div class="text">
 							I'm a Junior Computer Science student from the University of Michigan.
 						</div>
+						<div class="numbertext">2 / 6</div>
 					</div>
 
-					<div class="mySlides fade">
-						<div class="numbertext">3 / 6</div>
+					<div class="mySlides">
 						<img src="scene3.jpg" style="width:700px;">
 						<div class="text">
 						I'm actively looking for a software engineering intern position for the Summer of 2023.
 						</div>
+						<div class="numbertext">3 / 6</div>
 					</div>
-					<div class="mySlides fade">
-						<div class="numbertext">4 / 6</div>
+					<div class="mySlides">
 						<img src="scene4.jpg" style="width:700px;">
 						<div class="text">
 						I am proficient in multiple programming languages and have multiple internships and large-scale project experiences.
 						</div>
+						<div class="numbertext">4 / 6</div>
 					</div>
-					<div class="mySlides fade">
-						<div class="numbertext">5 / 6</div>
+					<div class="mySlides">
 						<img src="scene5.jpg" style="width:700px;">
 						<div class="text">
 						I am very passionate, diligent, and motivated to learn new skills, and I also have  excellent team communication skills.
 						</div>
+						<div class="numbertext">5 / 6</div>
 					</div>
-					<div class="mySlides fade">
-						<div class="numbertext">6 / 6</div>
+					<div class="mySlides">
 						<img src="scene6.jpg" style="width:700px;">
 						<div class="text">
 						Please check out my resume and contact me with any opportunities. Thank You!
 						</div>
+						<div class="numbertext">6 / 6</div>
 					</div>
 
 					<a class="prev" onclick="plusSlides(-1)">❮</a>

@@ -20,6 +20,8 @@
       font-family: "retro",retro2, Arial;
       text-decoration: none;
       min-height: 100px;
+      display: flex;
+      flex-wrap: nowrap;
     }
 .top div {
     float: left;
