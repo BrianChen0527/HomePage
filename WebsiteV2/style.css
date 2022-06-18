@@ -1,4 +1,4 @@
-.resume{
+.button_text{
   --c: #FFF; /* the color  */
   --h: 1.2em;   /* the height */
   
@@ -11,9 +11,9 @@
   text-shadow: 
     0 calc(-1*var(--_t,0em)) var(--c), 
     0 calc(var(--h) - var(--_t,0em)) #050E16;
-  transition: .3s var(--_s,0s), background-position .3s calc(.3s - var(--_s,0s));
+  transition: .3s var(--_s,0s), background-position .3s calc(.2s - var(--_s,0s));
 }
-.resume:hover {
+.button_text:hover {
   --_t: var(--h);
   --_p: 100%;
   --_s: .3s
