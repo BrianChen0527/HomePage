@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+@font-face {
+    font-family: 'Ailerons';
+    src: URL('Ailerons/Ailerons-Regular.otf') format('truetype');
+}  
+
+.neonText {
+  color: #fff;
+  text-shadow:
+}
+
+h1 {
+  width: 100%;
+  font-size: 4.2rem;
+  /*animation: flicker 3s infinite alternate;   */  
+}
+h2 {
+ font-size: 3.0rem;  
+ /*animation: flicker 3s infinite alternate; */    
+
+}
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 21%, 23%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #64F1FF,
+      0 0 6px #64F1FF
+  
+  }
+  
+  20%, 22% {        
+      text-shadow: none;
+  }    
+}
+
+
+/* Additional styling */
+  
+
+.container {
+  padding-top: 5%;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+#title{
+  width: 100%;
+}
+
+#resume_button{
+  padding-top: 2%;
+  margin: auto;
+  width: 500px;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Ailerons", "Helvetica Neue", sans-serif;
+  min-height: 1800px;
+  background-color: #050E16
+}  
+</style>
+
+</head>
+  <body>
+    <div class="container">
+      <div id="title">
+        <h1 class="neonText">
+          Welcome to Brian Chen's Website
+        </h1>
+      </div>
+
+
+        <div id="resume_button">
+          <h2 class="resume">
+            Resume
+          </h2>
+        </div>
+     </div>
+
+  </body>
+</html>
