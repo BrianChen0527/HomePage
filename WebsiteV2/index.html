@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
   <script src="scripts.js"></script>
 	<style type="text/css">
@@ -22,7 +23,7 @@
 
 h1 {
   width: 100%;
-  font-size: 4.6rem;
+  font-size: 12vh;
   /*animation: flicker 3s infinite alternate;   */  
 }
 h2 {
@@ -50,7 +51,6 @@ h1, h2 {
 }*/
 
 
-/* Additional styling */
 
 body {
   font-size: 18px;
@@ -59,15 +59,14 @@ body {
   color: white;
 }  
 
-.nav{
-  min-height: 100px;
-  padding-left: 30px;
-  display: inline-block;
-  cursor: pointer;
-}
 
-.nav:hover {
-  dropMenu(this)
+
+/* Additional styling */
+.bar{
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  margin:   auto;
 }
 
 .bar1, .bar2, .bar3 {
@@ -97,7 +96,7 @@ body {
 }
 
 .container {
-  margin-top: 28vh;
+  margin-top: 24vh;
   text-align: center;
 }
 
@@ -105,13 +104,22 @@ body {
   width: 100%;
 }
 
-.button_wrap{
-  padding-top: 2%;
+.buttonsWrap{
+      max-width: 90%; 
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 5%;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-around;
+}
+
+.buttonWrap{
   margin: auto;
   width: 350px;
 }
 
-.resume_button{
+.resumeButton{
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -125,11 +133,15 @@ body {
 
 </head>
   <body>
-    <div class="nav" onclick="dropMenu(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
+
+<!--
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>-->
+
+
     <div class="container">
       <div id="title">
         <h1 class="neonText">
@@ -137,12 +149,30 @@ body {
         </h1>
       </div>
 
-      <div class="button_wrap resume_button">
-        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
-          <h2 class="button_text">
-            Resume
-          </h2>
-        </a>
+      <div class="bar"></div>
+
+      <div class="buttonsWrap">
+        <div class="buttonWrap resumeButton">
+          <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+            <h2 class="button_text">
+              Resume
+            </h2>
+          </a>
+        </div>
+        <div class="buttonWrap resumeButton">
+          <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+            <h2 class="button_text">
+              Resume
+            </h2>
+          </a>
+        </div>
+        <div class="buttonWrap resumeButton">
+          <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+            <h2 class="button_text">
+              Resume
+            </h2>
+          </a>
+        </div>
       </div>
      </div>
 

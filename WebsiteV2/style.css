@@ -4,12 +4,12 @@
   
   line-height: var(--h);
   background: 
-    linear-gradient(var(--c) 0 0) no-repeat 
+    linear-gradient(var(--c) 0 110) no-repeat 
     calc(200% - var(--_p,0%)) 100%/200% var(--_p,.08em);
   color: #0000;
   overflow: hidden;
   text-shadow: 
-    0 calc(-1*var(--_t,0em)) var(--c), 
+    0 calc(-1*var(--_t,0em)) var(--c),     /* text-shadow | offset-x | offset-y | color */
     0 calc(var(--h) - var(--_t,0em)) #050E16;
   transition: .3s var(--_s,0s), background-position .3s calc(.2s - var(--_s,0s));
 }
@@ -17,4 +17,24 @@
   --_t: var(--h);
   --_p: 100%;
   --_s: .3s
+}
+
+
+.hover-2 {
+  /* the height */
+  --h: 1.2em;
+
+  line-height: var(--h);
+  background: 
+    linear-gradient(#1095c1 0 0) 
+    bottom/100% calc(100% - var(--_i, 1) * 100%) no-repeat;
+  color: #0000;
+  overflow: hidden;
+  text-shadow: 
+    0 var(--_i, var(--h)) #fff,
+    0 0 rgb(0 0 0 / calc(var(--_i, 1) * 100%) );
+  transition: 0.3s;
+}
+.hover-2:hover {
+  --_i: 0;
 }
