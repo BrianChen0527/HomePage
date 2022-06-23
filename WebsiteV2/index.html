@@ -29,20 +29,48 @@ body {
 }
 
 .container {
-  padding-top: 16vh;
   text-align: center;
-  background-color: #050E16;
+}
+#title{
+  padding-top: 28vh;
+  width: 100%;
+  height: 80vh;
 }
 
-#title{
-  width: 100%;
-  padding-bottom: 12vh;
+.Transition{
+  height: 500px;
+  margin: 0;
+  background: url("background/hills.png") bottom no-repeat;
+  background-size: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.AboutMe{
+  height: 500px;
+  position: relative;
+  background:	url("background/blue.png") repeat;
+  z-index: 5;
+  padding: 10px 10px 10px 10px;
+}
+
+.AboutMeLeft{
+  height: 500px;
+  width: 50%;
+  position: relative;
+  z-index: 6;
+}
+
+.Experience{
+  height: 500px;
+  position: relative;
+  background:	url("background/blue.png") repeat;
+  z-index: 5;
 }
 
 .buttonsWrap{
       padding-left: 10%;
       padding-right: 10%;
-      padding-bottom: 5%;
       display: flex;
       flex-wrap:wrap;
       justify-content: space-around;
@@ -50,7 +78,7 @@ body {
 
 .buttonWrap{
   margin: auto;
-  width: 50vh;
+  width: 30vh;
 }
 
 .link{
@@ -60,36 +88,45 @@ body {
   text-decoration: none;
 }
 
-h1 {
-  width: 100%;
-  font-size: 16vh;
-  /*animation: flicker 3s infinite alternate;   */  
-}
-h2 {
-  font-size: 10vh;
- /*animation: flicker 3s infinite alternate; */    
-
-}
 h1, h2 {
   position: relative;
   z-index: 4;
   text-align: center;
-  font-weight: 400;
+  font-weight: lighter;
   font-family: "Ailerons", "Helvetica Neue", sans-serif;
+  
+}
+  
+h1 {
+  width: 100%;
+  font-size: 12vh;
+  
+  /* fade in animation */
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+h2 {
+  font-size: 5vh;
+  /* fade in animation */
+  animation: fadeInAnimation ease 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-/* adjustments for laptop screen */
-@media only screen and (min-width: 1200px){
+
+/* adjustments for phone screen */
+@media (pointer:coarse) and (max-width: 1200px){
   .buttonWrap{
-  margin: auto;
-  width: 30vh;
+    margin: auto;
+    width: 50vh;
   }
   
   h1{
-    font-size: 12vh;
+    font-size: 16vh;
   }
   h2{
-    font-size: 5vh;
+    font-size: 10vh;
   }
 } 
 </style>
@@ -112,8 +149,8 @@ h1, h2 {
           Welcome to Brian Chen's Website
         </h1>
       </div>
-
-      <div class="bar"></div>
+      <!--
+      <span class="letter"></span>
 
       <div class="buttonsWrap">
         <div class="buttonWrap">
@@ -133,12 +170,21 @@ h1, h2 {
         <div class="buttonWrap">
           <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
             <h2 class="button_text">
-              Projects
+              Experience
             </h2>
           </a>
         </div>
+      </div>-->
+      
+    <div class="Transition">
+    </div>
+    <div class="AboutMe">
+      <div class="AboutMeLeft">
+        <h3>sdf</h3>
       </div>
-     </div>
+    </div>
+    </div>
+
 
   </body>
 </html>
