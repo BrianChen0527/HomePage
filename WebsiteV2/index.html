@@ -14,41 +14,19 @@
 body {
   font-size: 18px;
   font-family: "Ailerons", "Helvetica Neue", sans-serif;
+  position: relative;
+  z-index: 4;
 }  
 
 /* Additional styling */
 .bar{
   width: 74%;
   height: 1px;
+  position: relative;
+  z-index: 4;
   background-color: white;
   margin:   auto;
 }
-
-/*.bar1, .bar2, .bar3 {
-  width: 40px;
-  height: 4px;
-  background-color: white;
-  margin: 8px 0;
-  transition: 0.4s;
-}*/
-
-/* Rotate first bar 
-.change .bar1 {
-  -webkit-transform: scaleX(5);
-  transform: scaleX(5);
-}*/
-
-/* Fade out the second bar 
-.change .bar2 {
-  -webkit-transform: scaleX(5);
-  transform: scaleX(5);
-}*/
-
-/* Rotate last bar 
-.change .bar3 {
-  -webkit-transform: scaleX(5);
-  transform: scaleX(5);
-}*/
 
 .container {
   padding-top: 16vh;
@@ -93,6 +71,8 @@ h2 {
 
 }
 h1, h2 {
+  position: relative;
+  z-index: 4;
   text-align: center;
   font-weight: 400;
   font-family: "Ailerons", "Helvetica Neue", sans-serif;
@@ -115,7 +95,11 @@ h1, h2 {
 </style>
 
 </head>
-  <body style="background-color: #050E16;">
+  <div class="background-container">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  </div>
+  <body>
   <!--
   <div class="container" onclick="myFunction(this)">
     <div class="bar1"></div>

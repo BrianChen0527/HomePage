@@ -1,3 +1,10 @@
+/*
+#####################################################################################################################
+#####################################################################################################################
+################################################### Fonts ###########################################################
+#####################################################################################################################
+#####################################################################################################################
+*/
 @font-face {
   font-family: 'Ailerons';
   src: URL('Fonts/Ailerons/Ailerons-Regular.otf') format('truetype');
@@ -16,31 +23,93 @@
 
 
 
-
-/* Flickering animation 
-@keyframes flicker {
-    
-  0%, 18%, 21%, 23%, 53%, 57%, 100% {
-
-      text-shadow:
-      0 0 4px #64F1FF,
-      0 0 6px #64F1FF
+/*
+#####################################################################################################################
+#####################################################################################################################
+############################################### Stars Background ####################################################
+#####################################################################################################################
+#####################################################################################################################
+*/
+@keyframes move-background {
+  from {
+      -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+      -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
   }
-  20%, 22% {        
-      text-shadow: none;
-  }    
-}*/
+  @-webkit-keyframes move-background {
+  from {
+      -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+      -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+  }
+
+  @-moz-keyframes move-background {    
+    from {
+      -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+      -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+  }
+
+    @-webkit-keyframes move-background {
+    from {
+      -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+      -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+  }
+
+  .background-container{
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  .stars {
+  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+  }
+
+  .twinkling{
+    width:10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    -moz-animation:move-background 70s linear infinite;
+    -ms-animation:move-background 70s linear infinite;
+    -o-animation:move-background 70s linear infinite;
+    -webkit-animation:move-background 70s linear infinite;
+    animation:move-background 70s linear infinite;	
+  }
 
 
-
-
-
-
-
-
-
-
-
+/*
+#####################################################################################################################
+#####################################################################################################################
+############################################### Buttons Animation ###################################################
+#####################################################################################################################
+#####################################################################################################################
+*/
 .button_text{
   --c: #FFF; /* the color  */
   --h: 1.2em;   /* the height */

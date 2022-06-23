@@ -3,7 +3,20 @@
 <head>
 	<title>Projects</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="scripts.js"></script>
 	<style type="text/css">
+
+		
+		h1 {
+  			
+			position: relative;
+			z-index: 5;
+			top: 5%;
+			font-size: 16vh;
+			text-align: center;
+			font-weight: 400;
+			font-family: "Ailerons", "Helvetica Neue", sans-serif;
+		}
 		h5{
 			text-align: center; 
 			width: 80%;
@@ -36,6 +49,8 @@
 			text-align: left;
 			color:white;
   			background-color: #050E16;
+			position: absolute;
+			z-index: 5;
         }
         /* Override the background color of the dropdown Button */
 		.dropbtn { background-color: #131718; }
@@ -48,6 +63,8 @@
 			display: flex;
 			flex-wrap:wrap;
 			justify-content: space-around;
+			position: relative;
+			z-index: 5;
 		}
 		#projectWrap{
 			padding-top: 50px;
@@ -73,9 +90,14 @@
 		}
 	</style>
 </head>
+
+<div class="background-container">
+<div class="stars"></div>
+<div class="twinkling"></div>
+</div>
 <body>
   	<h1>Projects</h1>
-  	<div id='projectsWrap'>
+	<div id='projectsWrap'>
   		<div id='projectWrap'>
   			<div id='project'>
   				<br><h5>AI Face Generator</h5><br>
