@@ -47,25 +47,69 @@ body {
 }
 
 .AboutMe{
-  height: 500px;
+  height: 80vh;
   position: relative;
-  background:	url("background/blue.png") repeat;
+  text-align: center;
   z-index: 5;
   padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .AboutMeLeft{
-  height: 500px;
+  height: 90%;
   width: 50%;
+  min-width: 250px;
+  margin-left: 10px;
+  background-color: rgba(0,0,0, 0.6);
+  padding-left: 5vw;
+  text-align: left;
+  position: relative;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+}
+.textWrap{
+  padding-left: 4vw;
+  padding-right: 6vw;
+  position: relative;
+  z-index: 7;
+}
+
+
+
+.AboutMeRight{
+  height: 90%;
+  width: 50%;
+  min-width: 250px;
+  background-color: rgba(0,0,0, 0.6);
+  text-align: center;
   position: relative;
   z-index: 6;
 }
 
 .Experience{
-  height: 500px;
+  height: 700px;
+  padding-bottom: 200px;
   position: relative;
-  background:	url("background/blue.png") repeat;
+  text-align: center;
   z-index: 5;
+}
+.ExperienceLeft{
+  height: 500px;
+  width: 50%;
+  padding-left: 5vw;
+  text-align: left;
+  position: relative;
+  z-index: 6;
+}
+.ExperienceRight{
+  height: 500px;
+  width: 50%;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  z-index: 6;
 }
 
 .buttonsWrap{
@@ -88,7 +132,10 @@ body {
   text-decoration: none;
 }
 
-h1, h2 {
+
+
+h1, h2, h3, h4{
+  color: white;
   position: relative;
   z-index: 4;
   text-align: center;
@@ -100,7 +147,6 @@ h1, h2 {
 h1 {
   width: 100%;
   font-size: 12vh;
-  
   /* fade in animation */
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
@@ -112,6 +158,24 @@ h2 {
   animation: fadeInAnimation ease 8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+h3{
+   font-size: 3vh;
+  /* fade in animation */
+  animation: fadeInAnimation ease 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+h4{
+  margin-top: 3vh;
+  text-align: left;
+  font-size: 6vh;
+}
+.introText{
+  color: white;
+  font-family: "Stellar", arial;
+  vertical-align: top;
+  font-size: 3vh;
 }
 
 
@@ -127,6 +191,9 @@ h2 {
   }
   h2{
     font-size: 10vh;
+  }
+  h3{
+    font-size: 5vh;
   }
 } 
 </style>
@@ -145,9 +212,10 @@ h2 {
   </div>-->
     <div class="container">
       <div id="title">
-        <h1 class="neonText">
-          Welcome to Brian Chen's Website
-        </h1>
+        
+        <h1>Hello, I'm Brian Chen.</h1>
+        <h3>Junior Computer Science Student at University of Michigan</h3>
+
       </div>
       <!--
       <span class="letter"></span>
@@ -174,16 +242,28 @@ h2 {
             </h2>
           </a>
         </div>
-      </div>-->
+      </div>
       
     <div class="Transition">
-    </div>
+    </div>-->
     <div class="AboutMe">
-      <div class="AboutMeLeft">
-        <h3>sdf</h3>
+      <div class="AboutMeLeft">  
+        <span class="letter" style="vertical-align: middle;"></span>
+        <div class="textWrap">
+          <h4>About Me</h4>
+          <span class="introText">Hi! My name is Brian Ying-Chi Chen, and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position. 
+            I am proficient in multiple programming languages and have multiple internships and large-scale project experiences. 
+            I'm also experienced with writing scalable, high-quality code with good test coverage. 
+            I would describe myself as passionate, curious, motivated, and excellent at team communication.
+            Please check out my experiences page if you're interested in my technical skills :D </span>  
+        </div>
+      </div>
+      <div class="AboutMeRight">
       </div>
     </div>
+    <div class="Experience">
     </div>
+  </div>
 
 
   </body>
