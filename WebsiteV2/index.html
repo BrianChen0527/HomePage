@@ -47,22 +47,20 @@ body {
 }
 
 .AboutMe{
-  height: 70vh;
+  height: 80vh;
   position: relative;
   text-align: center;
   z-index: 5;
-  padding: 10px 10px 10px 10px;
   display: flex;
   justify-content: center;
 }
 
 .AboutMeLeft{
   height: 90%;
-  width: 50%;
-  min-width: 250px;
+  width: 45%;
   margin-left: 10px;
   background-color: rgba(0,0,0, 0.6);
-  padding-left: 5vw;
+  padding-left: 3vw;
   text-align: left;
   position: relative;
   z-index: 6;
@@ -70,8 +68,8 @@ body {
   justify-content: center;
 }
 .textWrap{
-  padding-left: 4vw;
-  padding-right: 6vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   position: relative;
   z-index: 7;
 }
@@ -80,7 +78,7 @@ body {
 
 .AboutMeRight{
   height: 90%;
-  width: 50%;
+  width: 55%;
   min-width: 250px;
   background-color: rgba(0,0,0, 0.6);
   text-align: center;
@@ -93,24 +91,26 @@ body {
   position: relative;
   text-align: center;
   z-index: 5;
-  padding-right: 5vw;
   display: flex;
   justify-content: center;
 }
 .ExperienceLeft{
   height: 90%;
-  width: 64%;
+  width: 55%;
   position: relative;
   z-index: 6;
 }
 .ExperienceRight{
   height: 90%;
-  width: 36%;
-  padding-right: 5vw;
+  width: 45%;
+  margin-right: 10px;
+  padding-right: 3vw;
   text-align: right;
   display: inline-block;
   position: relative;
   z-index: 6;
+  display: flex;
+  justify-content: center;
 }
 
 .buttonsWrap{
@@ -251,8 +251,16 @@ h4{
       <div class="AboutMeLeft">  
         <span class="letter" style="vertical-align: middle;"></span>
         <div class="textWrap">
-          <h4>About Me</h4>
-          <span class="introText">Hi! My name is Brian Ying-Chi Chen, and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position.
+          <div class="buttonWrap">
+            <div style="float: left;">
+              <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+                <h4 class="button_text">
+                  About Me
+                </h4>
+              </a>
+            </div>
+          </div>
+          <span class="introText">Hello! My name is Brian Ying-Chi Chen, and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position.
             I would describe my personality as passionate and diligent. I am motivated when learning new skills, and I excel in collaborative team environments. 
              </span>  
         </div>
@@ -263,20 +271,22 @@ h4{
     <div class="Experience">
       <div class="ExperienceLeft"></div>
       <div class="ExperienceRight">
-        <div class="buttonWrap" style="">
-          <div style="float: right;">
-            <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
-              <h4 class="button_text">
-                Experience
-              </h4>
-            </a>
+        <div class="textWrap">
+          <div class="buttonWrap">
+            <div style="float: right;">
+              <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+                <h4 class="button_text">
+                  Experience
+                </h4>
+              </a>
+            </div>
           </div>
+          <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. I also have software engineering internships at tech companies such as Lenovo and Asus.
+            I'm experienced with writing scalable, high-quality code and unit tests with good test coverage.
+            Please check out my experiences page if you're interested in my technical skills :D</span>
         </div>
-        <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. I also have software engineering internships at tech companies such as Lenovo and Asus.
-          I'm experienced with writing scalable, high-quality code and unit tests with good test coverage.
-          Please check out my experiences page if you're interested in my technical skills :D</span>  
+        <span class="letter" style="vertical-align: middle; width: 2px;"></span>  
       </div>
-      <span class="letter" style="vertical-align: middle; width: 2px;"></span>
     </div>
   </div>
 
