@@ -47,7 +47,7 @@ body {
 }
 
 .AboutMe{
-  height: 80vh;
+  height: 70vh;
   position: relative;
   text-align: center;
   z-index: 5;
@@ -89,25 +89,26 @@ body {
 }
 
 .Experience{
-  height: 700px;
-  padding-bottom: 200px;
+  height: 80vh;
   position: relative;
   text-align: center;
   z-index: 5;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: center;
 }
 .ExperienceLeft{
-  height: 500px;
-  width: 50%;
-  padding-left: 5vw;
-  text-align: left;
+  height: 90%;
+  width: 64%;
   position: relative;
   z-index: 6;
 }
 .ExperienceRight{
-  height: 500px;
-  width: 50%;
-  background-color: white;
-  text-align: center;
+  height: 90%;
+  width: 36%;
+  padding-right: 5vw;
+  text-align: right;
+  display: inline-block;
   position: relative;
   z-index: 6;
 }
@@ -121,8 +122,8 @@ body {
 }
 
 .buttonWrap{
-  margin: auto;
-  width: 30vh;
+  width: auto;
+  height: 140px;
 }
 
 .link{
@@ -151,6 +152,7 @@ h1 {
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  letter-spacing: 0.4vw;
 }
 h2 {
   font-size: 5vh;
@@ -176,13 +178,13 @@ h4{
   font-family: "Stellar", arial;
   vertical-align: top;
   font-size: 3vh;
+  line-height: 140%;
 }
 
 
 /* adjustments for phone screen */
 @media (pointer:coarse) and (max-width: 1200px){
   .buttonWrap{
-    margin: auto;
     width: 50vh;
   }
   
@@ -215,7 +217,6 @@ h4{
         
         <h1>Hello, I'm Brian Chen.</h1>
         <h3>Junior Computer Science Student at University of Michigan</h3>
-
       </div>
       <!--
       <span class="letter"></span>
@@ -251,17 +252,31 @@ h4{
         <span class="letter" style="vertical-align: middle;"></span>
         <div class="textWrap">
           <h4>About Me</h4>
-          <span class="introText">Hi! My name is Brian Ying-Chi Chen, and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position. 
-            I am proficient in multiple programming languages and have multiple internships and large-scale project experiences. 
-            I'm also experienced with writing scalable, high-quality code with good test coverage. 
-            I would describe myself as passionate, curious, motivated, and excellent at team communication.
-            Please check out my experiences page if you're interested in my technical skills :D </span>  
+          <span class="introText">Hi! My name is Brian Ying-Chi Chen, and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position.
+            I would describe my personality as passionate and diligent. I am motivated when learning new skills, and I excel in collaborative team environments. 
+             </span>  
         </div>
       </div>
       <div class="AboutMeRight">
       </div>
     </div>
     <div class="Experience">
+      <div class="ExperienceLeft"></div>
+      <div class="ExperienceRight">
+        <div class="buttonWrap" style="">
+          <div style="float: right;">
+            <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+              <h4 class="button_text">
+                Experience
+              </h4>
+            </a>
+          </div>
+        </div>
+        <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. I also have software engineering internships at tech companies such as Lenovo and Asus.
+          I'm experienced with writing scalable, high-quality code and unit tests with good test coverage.
+          Please check out my experiences page if you're interested in my technical skills :D</span>  
+      </div>
+      <span class="letter" style="vertical-align: middle; width: 2px;"></span>
     </div>
   </div>
 
