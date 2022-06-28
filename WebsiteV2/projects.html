@@ -15,10 +15,14 @@
 			text-align: center;
 			font-weight: 400;
 			font-family: "Ailerons", "Helvetica Neue", sans-serif;
+			letter-spacing: 1vw;
 			/* fade in animation */
 			animation: fadeInAnimation ease 1s;
 			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
+		}
+		h3{
+			font-size: 3.5vh;
 		}
 		h5{
 			text-align: center; 
@@ -39,6 +43,16 @@
     		letter-spacing: 2px;
 			font-weight: 100;
 		}
+		h1, h2, h3, h4{
+			color: white;
+			position: relative;
+			z-index: 4;
+			text-align: center;
+			font-weight: lighter;
+			font-family: "Ailerons", "Helvetica Neue", sans-serif;
+			
+		}
+  
 		p{
 			width: 85%;
     		padding-top: 35px;
@@ -59,10 +73,7 @@
 			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
         }
-        /* Override the background color of the dropdown Button */
-		.dropbtn { background-color: #131718; }
-		/* Override color of dropdown links on hover */
-		.dropdown-content a:hover {color: #3CB4D2;}
+
 		#projectsWrap{
 			padding-left: 3%;
 			padding-right: 3%;
@@ -83,7 +94,7 @@
 			width: 400px;
 			padding-top: 15px;
 			padding-bottom: 35px;
-    		border-radius: 40px;
+				border-radius: 40px;
 			background-color: #000000;
 			justify-content: center;
 			/*box-shadow: 0 0 3pt 2pt #3CB4D2;*/
@@ -95,7 +106,10 @@
 			display: flex;
 			justify-content: center;
 		}
-
+        /* Override the background color of the dropdown Button */
+		.dropbtn { background-color: #131718; }
+		/* Override color of dropdown links on hover */
+		.dropdown-content a:hover {color: #3CB4D2;}
 		
 		/* adjustments for phone screen */
 		@media (pointer:coarse) and (max-width: 1200px){
@@ -221,7 +235,43 @@
 
 
 
-
+    <div class="socials">
+		<div style="height: 10px; width: 100%;">
+		  <span class="horizontal_bar"></span>
+		</div>
+		<div class="buttonWrap">
+		  <a class="link" href="https://www.linkedin.com/in/brian-chen-1267b6220/" download="Ying-Chi_Chen_Resume.docx">
+			<h3 class="button_text">
+			  LinkedIn
+			</h3>
+		  </a>
+		</div>
+		<div class="buttonWrap">
+		  <a class="link" href="https://github.com/BrianChen0527" download="Ying-Chi_Chen_Resume.docx">
+			<h3 class="button_text">
+			  Github
+			</h3>
+		  </a>
+		</div>
+		<div class="buttonWrap">
+		  <a class="link" href="https://www.instagram.com/brian._yc/" download="Ying-Chi_Chen_Resume.docx">
+			<h3 class="button_text">
+			  Instagram
+			</h3>
+		  </a>
+		</div>
+		<div class="buttonWrap">
+		  <a class="link" href="mailto:brianc.boston@gmail.com" download="Ying-Chi_Chen_Resume.docx">
+			<h3 class="button_text">
+			  Email
+			</h3>
+		  </a>
+		</div>
+		<div style="width: 100%;">
+		  <h3 style="font-family: 'Stellar'; font-size: 2vh;">(+1) 734 604 8505 &emsp;&emsp;|&emsp;&emsp; Ann Arbor, MI, USA</h3>
+		</div>
+	  </div>
+	</div>
 
 </body>
 </html>

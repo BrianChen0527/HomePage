@@ -117,32 +117,6 @@ body {
   z-index: 6;
 }
 
-.socials{
-  height: 20vh;
-  max-height: 100px;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 200px;
-  position: relative;
-  z-index: 6;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
-}
-
-.buttonWrap{
-  width: auto;
-  height: auto;
-  max-height: 15vh;
-}
-
-.link{
-  border-left: 5px;
-  text-decoration: none;
-}
-
-
-
 h1, h2, h3, h4{
   color: white;
   position: relative;
@@ -163,14 +137,14 @@ h1 {
   letter-spacing: 0.5vw;
 }
 h2 {
-  font-size: 5vh;
+  font-size: 3vh;
   /* fade in animation */
   animation: fadeInAnimation ease 8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 h3{
-   font-size: 4vh;
+  font-size: 3.5vh;
   /* fade in animation */
   animation: fadeInAnimation ease 8s;
   animation-iteration-count: 1;
@@ -208,11 +182,12 @@ h4{
 } 
 </style>
 
-</head>
+
   <div class="background-container">
   <div class="stars"></div>
   <div class="twinkling"></div>
   </div>
+  </head>
   <body>
   <!--
   <div class="container" onclick="myFunction(this)">
@@ -224,7 +199,7 @@ h4{
       <div id="title">
         
         <h1>Hello, I'm Brian Chen.</h1>
-        <h3>Junior Computer Science Student at University of Michigan</h3>
+        <h2>Junior Computer Science Student at University of Michigan</h2>
       </div>
       
     <div class="AboutMe">
@@ -232,7 +207,9 @@ h4{
       <div class="AboutMeLeft"> 
         <div class="buttonWrap">
           <div style="display: flex; ">
-            <h4 class="button_text">About Me</h4> 
+            <a href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx" style="text-decoration: none;">
+              <h4 class="button_text">About Me</h4> 
+            </a>
           </div>
         </div>
         <div class="textWrap">
@@ -247,7 +224,7 @@ h4{
     </div>
 
     <!-- SPACING -->
-    <div style="height: 100px;"></div>
+    <div style="height: 300px;"></div>
 
     <div class="Experience">
       <div class="ExperienceLeft">
@@ -262,49 +239,61 @@ h4{
           </div>
         </div>
         <div class="textWrap">
-          <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. I also have software engineering internships at tech companies such as Lenovo and Asus.
+          <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. 
+            I've also interned at tech companies such as Lenovo and Asus as a software engineer.
             I'm experienced with writing scalable, high-quality code and unit tests with good test coverage.
-            Please check out my experiences page if you're interested in my technical skills.
+            Please check out my LinkedIn and my <a href="projects.html" style="color: white; text-decoration: underline;">experiences page</a> if you're interested in my technical skills.
           </span> 
         </div>
      </div>
      <span class="vertical_bar" style="vertical-align: middle;"></span>
     </div>
     
+    <!-- SPACING -->
+    <div style="height: 100px;"></div>
+
+    <!-- SPACING -->
+    <div style="height: 100vh; display: table; overflow: hidden; width: 100%;">
+      <div style="display: table-cell; vertical-align: top; width: 100%;">
+        <h4 style="vertical-align: top; text-align: center;">Two Truths One lie</h4>
+      </div>
+
+    </div>
+
     <div class="socials">
       <div style="height: 10px; width: 100%;">
         <span class="horizontal_bar"></span>
       </div>
       <div class="buttonWrap">
-        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+        <a class="link" href="https://www.linkedin.com/in/brian-chen-1267b6220/" download="Ying-Chi_Chen_Resume.docx">
           <h3 class="button_text">
             LinkedIn
           </h3>
         </a>
       </div>
       <div class="buttonWrap">
-        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+        <a class="link" href="https://github.com/BrianChen0527" download="Ying-Chi_Chen_Resume.docx">
           <h3 class="button_text">
             Github
           </h3>
         </a>
       </div>
       <div class="buttonWrap">
-        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+        <a class="link" href="https://www.instagram.com/brian._yc/" download="Ying-Chi_Chen_Resume.docx">
           <h3 class="button_text">
             Instagram
           </h3>
         </a>
       </div>
       <div class="buttonWrap">
-        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+        <a class="link" href="mailto:brianc.boston@gmail.com" download="Ying-Chi_Chen_Resume.docx">
           <h3 class="button_text">
             Email
           </h3>
         </a>
       </div>
       <div style="width: 100%;">
-        <h3 style="font-family: 'Stellar'; font-size: 2vh;">(+1) 734 604 8505 &emsp;|&emsp; Ann Arbor, MI, USA</h3>
+        <h3 style="font-family: 'Stellar'; font-size: 2vh;">(+1) 734 604 8505 &emsp;&emsp;|&emsp;&emsp; Ann Arbor, MI, USA</h3>
       </div>
     </div>
   </div>

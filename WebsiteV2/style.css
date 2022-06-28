@@ -119,7 +119,7 @@
 .horizontal_bar{
   display: inline-flex;
   width:  100%;
-  height: 2px;
+  height: 1px;
   background-color: white;
   position: relative;
   z-index: 4;
@@ -128,12 +128,15 @@
   box-shadow:
     0 0 2px rgba(0, 0, 0, .75),
     inset 0 0 2px rgba(0, 0, 0, .45);
+}
 
-  animation: horizontal_bar 3s ease-in-out ;
+.horizontal_expansion{
+  animation: horizontal_bar 2s ease-in-out ;
   animation-fill-mode: forwards;
 }
+
 @keyframes horizontal_bar {
-  0%,5%{ width: 0px; opacity: 0;}
+  0%,5%{ width: 0px; opacity: 1;}
   90%,100%{ width: 100%; opacity: 1;}
 }
 
@@ -141,7 +144,7 @@
 
   .vertical_bar{
     display: inline-flex;
-    width:  2px;
+    width:  1.5px;
     height: 85%;
     background-color: white;
     position: relative;
@@ -152,9 +155,13 @@
       0 0 2px rgba(0, 0, 0, .75),
       inset 0 0 2px rgba(0, 0, 0, .45);
   
-    animation: vertical_bar 3s ease-in-out ;
+  }
+
+  .vertical_expansion{
+    animation: vertical_bar 2s ease-in-out ;
     animation-fill-mode: forwards;
   }
+
   @keyframes vertical_bar {
     0%,5%{ height: 1px; opacity: 0;}
     90%,100%{ height: 85%; opacity: 1;}
@@ -299,4 +306,86 @@
 
 .btn:hover {
   background: black;
+}
+
+
+/*
+#####################################################################################################################
+#####################################################################################################################
+#################################################### Socials Bar ####################################################
+#####################################################################################################################
+#####################################################################################################################
+*/
+
+.socials{
+  max-height: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+  position: relative;
+  z-index: 6;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+
+/*
+#####################################################################################################################
+#####################################################################################################################
+################################################### Buttons & Links #################################################
+#####################################################################################################################
+#####################################################################################################################
+*/
+
+
+.buttonWrap{
+  width: auto;
+  height: auto;
+  max-height: 15vh;
+}
+
+.link{
+  border-left: 5px;
+  text-decoration: none;
+}
+/*
+#####################################################################################################################
+#####################################################################################################################
+############################################## Project-related Wrappers #############################################
+#####################################################################################################################
+#####################################################################################################################
+*/
+
+
+#projectsWrap{
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  position: relative;
+  z-index: 5;
+}
+#projectWrap{
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  min-height: 550px;
+}
+#project{
+  width: 400px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+    border-radius: 40px;
+  background-color: #000000;
+  justify-content: center;
+  /*box-shadow: 0 0 3pt 2pt #3CB4D2;*/
+}
+#iconWrap{
+  width: 100%;
+  height: 90px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
