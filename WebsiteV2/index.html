@@ -47,7 +47,8 @@ body {
 }
 
 .AboutMe{
-  height: 80vh;
+  height: 70vh;
+  margin-left: 3vw;
   position: relative;
   text-align: center;
   z-index: 5;
@@ -57,78 +58,85 @@ body {
 
 .AboutMeLeft{
   height: 90%;
-  width: 45%;
+  width: 40%;
   margin-left: 10px;
   background-color: rgba(0,0,0, 0.6);
   padding-left: 3vw;
   text-align: left;
   position: relative;
   z-index: 6;
-  display: flex;
-  justify-content: center;
 }
 .textWrap{
-  padding-left: 2vw;
-  padding-right: 2vw;
   position: relative;
   z-index: 7;
+  display: block;
 }
 
 
 
 .AboutMeRight{
   height: 90%;
-  width: 55%;
+  width: 60%;
   min-width: 250px;
   background-color: rgba(0,0,0, 0.6);
   text-align: center;
   position: relative;
   z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Experience{
-  height: 80vh;
+  height: 70vh;
   position: relative;
   text-align: center;
+  margin-right: 3vw;
   z-index: 5;
   display: flex;
   justify-content: center;
 }
 .ExperienceLeft{
   height: 90%;
-  width: 55%;
-  position: relative;
-  z-index: 6;
-}
-.ExperienceRight{
-  height: 90%;
-  width: 45%;
-  margin-right: 10px;
-  padding-right: 3vw;
-  text-align: right;
-  display: inline-block;
+  width: 60%;
   position: relative;
   z-index: 6;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.ExperienceRight{
+  height: 90%;
+  width: 40%;
+  margin-right: 10px;
+  padding-right: 3vw;
+  background-color: rgba(0,0,0, 0.6);
+  text-align: right;
+  display: inline-block;
+  position: relative;
+  z-index: 6;
 }
 
-.buttonsWrap{
-      padding-left: 10%;
-      padding-right: 10%;
-      display: flex;
-      flex-wrap:wrap;
-      justify-content: space-around;
+.socials{
+  height: 20vh;
+  max-height: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 200px;
+  position: relative;
+  z-index: 6;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
 }
 
 .buttonWrap{
   width: auto;
-  height: 140px;
+  height: auto;
+  max-height: 15vh;
 }
 
 .link{
-  width: 100%;
-  height: 100%;
   border-left: 5px;
   text-decoration: none;
 }
@@ -147,12 +155,12 @@ h1, h2, h3, h4{
   
 h1 {
   width: 100%;
-  font-size: 12vh;
+  font-size: 10vh;
   /* fade in animation */
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  letter-spacing: 0.4vw;
+  letter-spacing: 0.5vw;
 }
 h2 {
   font-size: 5vh;
@@ -162,7 +170,7 @@ h2 {
   animation-fill-mode: forwards;
 }
 h3{
-   font-size: 3vh;
+   font-size: 4vh;
   /* fade in animation */
   animation: fadeInAnimation ease 8s;
   animation-iteration-count: 1;
@@ -218,74 +226,85 @@ h4{
         <h1>Hello, I'm Brian Chen.</h1>
         <h3>Junior Computer Science Student at University of Michigan</h3>
       </div>
-      <!--
-      <span class="letter"></span>
-
-      <div class="buttonsWrap">
-        <div class="buttonWrap">
-          <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
-            <h2 class="button_text">
-              About Me
-            </h2>
-          </a>
-        </div>
-        <div class="buttonWrap">
-          <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
-            <h2 class="button_text">
-              Resume
-            </h2>
-          </a>
-        </div>
-        <div class="buttonWrap">
-          <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
-            <h2 class="button_text">
-              Experience
-            </h2>
-          </a>
-        </div>
-      </div>
       
-    <div class="Transition">
-    </div>-->
     <div class="AboutMe">
-      <div class="AboutMeLeft">  
-        <span class="letter" style="vertical-align: middle;"></span>
-        <div class="textWrap">
-          <div class="buttonWrap">
-            <div style="float: left;">
-              <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
-                <h4 class="button_text">
-                  About Me
-                </h4>
-              </a>
-            </div>
+      <span class="vertical_bar" style="vertical-align: middle;"></span>
+      <div class="AboutMeLeft"> 
+        <div class="buttonWrap">
+          <div style="display: flex; ">
+            <h4 class="button_text">About Me</h4> 
           </div>
+        </div>
+        <div class="textWrap">
           <span class="introText">Hello! My name is Brian Ying-Chi Chen, and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position.
             I would describe my personality as passionate and diligent. I am motivated when learning new skills, and I excel in collaborative team environments. 
-             </span>  
+          </span>
         </div>
       </div>
       <div class="AboutMeRight">
+        <img src="icons/sample.jpg" style="height: auto; width: 90%; max-width: 650px;">
       </div>
     </div>
+
+    <!-- SPACING -->
+    <div style="height: 100px;"></div>
+
     <div class="Experience">
-      <div class="ExperienceLeft"></div>
+      <div class="ExperienceLeft">
+        <img src="icons/sample.jpg" style="height: auto; width: 90%; max-width: 650px;">
+      </div>
       <div class="ExperienceRight">
-        <div class="textWrap">
-          <div class="buttonWrap">
-            <div style="float: right;">
-              <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
-                <h4 class="button_text">
-                  Experience
-                </h4>
-              </a>
-            </div>
+        <div class="buttonWrap">
+          <div style="display: flex; justify-content: right;">
+            <a href="projects.html" style="text-decoration: none;">
+              <h4 class="button_text">Experience</h4> 
+            </a>
           </div>
+        </div>
+        <div class="textWrap">
           <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. I also have software engineering internships at tech companies such as Lenovo and Asus.
             I'm experienced with writing scalable, high-quality code and unit tests with good test coverage.
-            Please check out my experiences page if you're interested in my technical skills :D</span>
+            Please check out my experiences page if you're interested in my technical skills.
+          </span> 
         </div>
-        <span class="letter" style="vertical-align: middle; width: 2px;"></span>  
+     </div>
+     <span class="vertical_bar" style="vertical-align: middle;"></span>
+    </div>
+    
+    <div class="socials">
+      <div style="height: 10px; width: 100%;">
+        <span class="horizontal_bar"></span>
+      </div>
+      <div class="buttonWrap">
+        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+          <h3 class="button_text">
+            LinkedIn
+          </h3>
+        </a>
+      </div>
+      <div class="buttonWrap">
+        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+          <h3 class="button_text">
+            Github
+          </h3>
+        </a>
+      </div>
+      <div class="buttonWrap">
+        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+          <h3 class="button_text">
+            Instagram
+          </h3>
+        </a>
+      </div>
+      <div class="buttonWrap">
+        <a class="link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">
+          <h3 class="button_text">
+            Email
+          </h3>
+        </a>
+      </div>
+      <div style="width: 100%;">
+        <h3 style="font-family: 'Stellar'; font-size: 2vh;">(+1) 734 604 8505 &emsp;|&emsp; Ann Arbor, MI, USA</h3>
       </div>
     </div>
   </div>
