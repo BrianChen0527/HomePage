@@ -117,6 +117,12 @@ body {
   z-index: 6;
 }
 
+.TruthsLiesWrap{
+  height: 100vh; 
+  width: 100%;
+  justify-content: space-around;
+}
+
 h1, h2, h3, h4{
   color: white;
   position: relative;
@@ -253,11 +259,19 @@ h4{
     <div style="height: 100px;"></div>
 
     <!-- SPACING -->
-    <div style="height: 100vh; display: table; overflow: hidden; width: 100%;">
-      <div style="display: table-cell; vertical-align: top; width: 100%;">
-        <h4 style="vertical-align: top; text-align: center;">Two Truths One lie</h4>
+    <div class="TruthsLiesWrap">
+      <div style="width: 100%; max-height: 15%;">
+        <h4 style="vertical-align: top; text-align: center; max-height: 7vh;">Two Truths One lie</h4>
       </div>
-
+      <div class="btn" style="width: 90%; min-height: 100px; max-height: 10%; margin-bottom: 20px;">
+        <h3 style="z-index: 8;">I've jumped out of a plane 19000 feet in the air.</h3>
+      </div>
+      <div class="btn" style="width: 90%; min-height: 100px; max-height: 10%; margin-bottom: 20px;">
+        <h3 style="z-index: 8;">I've tried stir-fried grasshoppers before.</h3>
+      </div>
+      <div class="btn" style="width: 90%; min-height: 100px; max-height: 10%; margin-bottom: 20px;">
+        <h3 style="z-index: 8;">sasddddddddddddddddup</h3>
+      </div>
     </div>
 
     <div class="socials">
