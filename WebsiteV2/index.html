@@ -118,8 +118,9 @@ body {
 }
 
 .TruthsLiesWrap{
-  height: 100vh; 
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -161,6 +162,12 @@ h4{
   text-align: left;
   font-size: 6vh;
 }
+h5{
+  font-family: 'Stellar'; 
+  font-size: 2.5vh; 
+  z-index: 8;
+  font-weight: 100;
+}
 .introText{
   color: white;
   font-family: "Stellar", arial;
@@ -168,6 +175,19 @@ h4{
   font-size: 3vh;
   line-height: 140%;
 }
+
+/* OVERRIDING style.css format for 2 Truths 1 Lie containers*/
+.btn::before {
+  height: 110%;
+  width: 89%;
+}
+
+.btn::after {
+  width: 110%;
+  height: 19%;
+}
+
+
 
 
 /* adjustments for phone screen */
@@ -259,20 +279,24 @@ h4{
     <div style="height: 100px;"></div>
 
     <!-- SPACING -->
+    
+    <div style="width: 100%;">
+      <h4 style="text-align: center;">Two Truths One lie</h4>
+    </div>
     <div class="TruthsLiesWrap">
-      <div style="width: 100%; max-height: 15%;">
-        <h4 style="vertical-align: top; text-align: center; max-height: 7vh;">Two Truths One lie</h4>
+      <div class="btn" style="width: 50%; min-height: 100px; max-height: 8%; margin-bottom: 50px;">
+        <h5>I've jumped out of a plane 19000 feet in the air.</h5>
       </div>
-      <div class="btn" style="width: 90%; min-height: 100px; max-height: 10%; margin-bottom: 20px;">
-        <h3 style="z-index: 8;">I've jumped out of a plane 19000 feet in the air.</h3>
+      <div class="btn" style="width: 50%; min-height: 100px; max-height: 8%; margin-bottom: 50px;">
+        <h5>I've tried stir-fried grasshoppers before (and I liked them).</h5>
       </div>
-      <div class="btn" style="width: 90%; min-height: 100px; max-height: 10%; margin-bottom: 20px;">
-        <h3 style="z-index: 8;">I've tried stir-fried grasshoppers before.</h3>
-      </div>
-      <div class="btn" style="width: 90%; min-height: 100px; max-height: 10%; margin-bottom: 20px;">
-        <h3 style="z-index: 8;">sasddddddddddddddddup</h3>
+      <div class="btn" style="width: 50%; min-height: 100px; max-height: 8%; margin-bottom: 50px;">
+        <h5>I hiked to the top of mount Fuji in high school.</h5>
       </div>
     </div>
+
+    <!-- SPACING -->
+    <div style="height: 200px;"></div>
 
     <div class="socials">
       <div style="height: 10px; width: 100%;">
