@@ -127,6 +127,7 @@
   background-color: white;
   position: relative;
   z-index: 4;
+  opacity: 0;
   /* border: 2.5px solid #FF1EAD; */
   border-radius: 14px;
   box-shadow:
@@ -135,7 +136,7 @@
 }
 
 .horizontal_expansion{
-  animation: horizontal_bar 2s ease-in-out ;
+  animation: horizontal_bar 1s ease-in-out ;
   animation-fill-mode: forwards;
 }
 
@@ -244,7 +245,7 @@
 
 @keyframes flyIn{
   0%{
-    letter-spacing: 2vw;
+    letter-spacing: 2.2vw;
     opacity: 0;
   }
   30%, 100%{
@@ -343,7 +344,7 @@
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
-  background-image: linear-gradient(to bottom, rgba(225, 0, 255, 0.05), rgba(41, 0, 136, 0.623));
+  background-image: linear-gradient(to bottom, rgba(225, 0, 255, 0), #89009b49);
 }
 
 /*
@@ -364,6 +365,11 @@
 .link{
   border-left: 5px;
   text-decoration: none;
+}
+
+.in_text_link{
+  color: white;
+  text-decoration: underline;
 }
 /*
 #####################################################################################################################
@@ -405,4 +411,43 @@
   padding-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+/*
+#####################################################################################################################
+#####################################################################################################################
+############################################### in-text link animation ##############################################
+#####################################################################################################################
+#####################################################################################################################
+*/
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #fb7500 0%,
+    #ff1242 20%,
+    #bc00d4 50%,
+    #ff1242 80%,
+    #fb7500 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 3vh;
+  font-weight:bolder;
+  text-decoration: underline;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
