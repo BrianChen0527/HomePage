@@ -31,10 +31,19 @@ body {
 .container {
   text-align: center;
 }
-#title{
-  padding-top: 28vh;
-  width: 100%;
-  height: 80vh;
+
+.titleWrap{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  position: absolute;  
+  max-width: 100vw; 
+  left: 50%; 
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .Transition{
@@ -127,7 +136,8 @@ body {
 
 #truth, #lie{
   background-color: black;
-  font-family: 'Stellar'; 
+  font-family: 'Stellar', Arial, Helvetica, sans-serif; 
+  letter-spacing: 1px;
   font-size: 2.5vh; 
   z-index: 8;
   font-weight: 100;
@@ -154,14 +164,14 @@ h1, h2, h3, h4{
 }
   
 h1 {
-  width: 100%;
   font-size: 10vh;
-  /* fade in animation */
-  animation: fadeInAnimation ease 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  letter-spacing: 0.5vw;
 }
+
+.header{
+  opacity: 0;
+  white-space: nowrap;
+}
+
 h2 {
   font-size: 3vh;
   /* fade in animation */
@@ -221,17 +231,13 @@ h5{
   </div>
   </head>
   <body>
-  <!--
-  <div class="container" onclick="myFunction(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>-->
+  
     <div class="container">
-      <div id="title">
-        
-        <h1>Hello, I'm Brian Chen.</h1>
-        <h2>Junior Computer Science Student at University of Michigan</h2>
+      <div class="titleWrap">
+        <div class="title">
+          <h1 class="header flyIn" style="font-size: 6vh; margin-top: 0;">Hello, I'm Brian Chen.</h1>
+        </div>
+        <!--<h2>Junior Computer Science Student at University of Michigan</h2>-->
       </div>
       
     <div class="AboutMe">
@@ -245,8 +251,9 @@ h5{
           </div>
         </div>
         <div class="textWrap">
-          <span class="introText">Hello! My name is Brian Ying-Chi Chen, and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position.
-            I would describe my personality as passionate and diligent. I am motivated when learning new skills, and I excel in collaborative team environments. 
+          <span class="introText">My name is Brian Ying-Chi Chen and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position.
+            I would describe my personality as passionate and diligent. I am motivated to learn new skills, and I excel in collaborative team environments.
+            Please reach out with opportunities and offers, or if you'd like to connect  :D
           </span>
         </div>
       </div>
@@ -274,7 +281,11 @@ h5{
           <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. 
             I've also interned at tech companies such as Lenovo and Asus as a software engineer.
             I'm experienced with writing scalable, high-quality code and unit tests with good test coverage.
-            Please check out my LinkedIn and my <a href="projects.html" style="color: white; text-decoration: underline;">experiences page</a> if you're interested in my technical skills.
+            Check out my 
+            <a href="https://www.linkedin.com/in/brian-chen-1267b6220/" style="color: white; text-decoration: underline;">LinkedIn</a>
+             and my 
+             <a href="projects.html" style="color: white; text-decoration: underline;">experiences page</a> if you're interested in my technical skills.
+
           </span> 
         </div>
      </div>
@@ -292,23 +303,23 @@ h5{
     <div class="TruthsLiesWrap">
       <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
         <button id="truth" style="position: relative; z-index: 8; ">
-          I've jumped out of a plane 19000 feet in the air.
+          I jumped out of a plane 19000 feet in the air last winter vacation.
         </button>
       </div>
       <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
         <button id="truth" style="position: relative; z-index: 8; ">
-          I've tried stir-fried grasshoppers before (and I liked them).
+          I tried stir-fried grasshoppers when I traveled to Cambodia (they weren't too bad).
         </button>
       </div>
       <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
         <button id="lie" style="position: relative; z-index: 8; ">
-          I hiked to the top of mount Fuji in high school.
+          I've hiked to the top of mount Fuji in Japan before.
         </button>
       </div>
 
       <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
         <button id="truth" style="position: relative; z-index: 8; ">
-          I've rappelled down the side of a mountain before.
+          I encountered multiple sharks while scuba-diving in the coastal reefs of Palau.
         </button>
       </div>
     </div>

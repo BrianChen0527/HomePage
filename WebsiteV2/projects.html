@@ -74,7 +74,20 @@
 			animation-fill-mode: forwards;
         }
 
+		#outerExperienceWrap{
+			padding-top: 10vh;
+			padding-left: 3%;
+			padding-right: 3%;
+			padding-bottom: 5%;
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-around;
+			position: relative;
+			z-index: 5;
+		}
+
 		#projectsWrap{
+			padding-top: 10vh;
 			padding-left: 3%;
 			padding-right: 3%;
 			padding-bottom: 5%;
@@ -138,13 +151,20 @@
 </div>
 <body>
 
+	<h1>Experience</h1>
+	<div id="outerExperienceWrap">
+
+	</div>
+
+
+
 	<div class="outerProjectWrap">
   	<h1>Projects</h1>
 	<div id='projectsWrap'>
 		<div id='projectWrap'>
 			<div class="btn">
 				<span class="noselect">
-					<br><br><h5>AI Face Generator</h5><br>
+					<br><br><h5>GAN Face Generator</h5><br>
 					<p>Created a deep learning face generator that generates fictional anime character faces using a Generative Adversarial Network (GAN) in Pytorch. The generator model was built using a transposed-convolutional neural network and the discriminator model was built using a deep convolutional neural network. Together they were trained with Kaggle's anime face dataset. </p>
 					<div id="iconWrap">
 						<img src="icons/Python_logo.png" style="height: 60px; width: auto;">
@@ -236,7 +256,7 @@
 
 
     <div class="socials">
-		<div style="height: 10px; width: 100%;">
+		<div style="height: 10px; width: 100%; text-align: center;">
 		  <span class="horizontal_bar"></span>
 		</div>
 		<div class="buttonWrap">

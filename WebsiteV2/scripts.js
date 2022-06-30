@@ -6,6 +6,23 @@
 #####################################################################################################################
 */
 
+function fly_in_animation(){
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square = entry.target.querySelector('.header');
+
+      if (entry.isIntersecting) {
+        square.classList.add('flyIn');
+      return; // if we added the class, exit the function
+      }
+
+      // We're not intersecting, so remove the class!
+      square.classList.remove('flyIn');
+    });
+  });
+
+  observer.observe(document.querySelector('.title'));
+}
 
 function vertical_bar_animation(){
   const observer = new IntersectionObserver(entries => {
@@ -44,18 +61,12 @@ function horizontal_bar_animation(){
   observer.observe(document.querySelector('.socials'));
 }
 
+
+window.addEventListener("scroll", fly_in_animation);
 window.addEventListener("scroll", vertical_bar_animation);
 window.addEventListener("scroll", horizontal_bar_animation);
 
 // To check the scroll position on page load
+fly_in_animation()
 vertical_bar_animation();
 horizontal_bar_animation();
-
-
-/*
-#####################################################################################################################
-#####################################################################################################################
-############################################# 2 Truths 1 Lie Button animation #######################################
-#####################################################################################################################
-#####################################################################################################################
-*/

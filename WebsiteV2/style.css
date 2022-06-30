@@ -26,6 +26,10 @@
   src: URL('Fonts/PPStellar-Free_for_personal_use_v1.7/PPStellar-Free\ for\ personal\ use\ v1.7/PPStellar-Light.otf') format('truetype');
 } 
 
+@font-face {
+  font-family: 'Calibre';
+  src: URL('Fonts/Calibre/CalibreSuperCondensed-Regular.otf') format('truetype');
+} 
 
 
 /*
@@ -163,7 +167,7 @@
   }
 
   @keyframes vertical_bar {
-    0%,5%{ height: 1px; opacity: 0;}
+    0%,5%{ height: 1px; opacity: 0.5;}
     90%,100%{ height: 85%; opacity: 1;}
   }
 
@@ -232,6 +236,23 @@
     }
 }
 
+.flyIn{
+  /* fade in animation */
+  animation: flyIn 6s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flyIn{
+  0%{
+    letter-spacing: 2vw;
+    opacity: 0;
+  }
+  30%, 100%{
+    letter-spacing: 0.5vw;
+    opacity: 1;
+  }
+}
+
 
 /*
 #####################################################################################################################
@@ -253,14 +274,14 @@
   justify-content: center;
   position: relative;
   z-index: 5;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .btn::before, .btn::after {
   position: absolute;
   background: black;
   z-index: 6;
-  transition: 1s;
+  transition: 0.5s;
   content: '';
 }
 
@@ -322,9 +343,8 @@
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
-  background-image: linear-gradient(to bottom, rgb(75, 0, 136, 0.05), rgba(75, 0, 136, 0.623));
+  background-image: linear-gradient(to bottom, rgba(225, 0, 255, 0.05), rgba(41, 0, 136, 0.623));
 }
-
 
 /*
 #####################################################################################################################
