@@ -144,7 +144,7 @@
 
   .vertical_bar{
     display: inline-flex;
-    width:  1.5px;
+    width: 2px;
     height: 85%;
     background-color: white;
     position: relative;
@@ -315,7 +315,6 @@
 */
 
 .socials{
-  max-height: 100px;
   padding-left: 15%;
   padding-right: 15%;
   position: relative;
@@ -323,6 +322,7 @@
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
+  background-image: linear-gradient(to bottom, rgb(75, 0, 136, 0.05), rgba(75, 0, 136, 0.623));
 }
 
 
