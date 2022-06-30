@@ -136,12 +136,12 @@
 }
 
 .horizontal_expansion{
-  animation: horizontal_bar 1s ease-in-out ;
+  animation: horizontal_bar 2s ease-in-out ;
   animation-fill-mode: forwards;
 }
 
 @keyframes horizontal_bar {
-  0%,5%{ width: 0px; opacity: 1;}
+  0%,5%{ width: 0px; opacity: 0;}
   90%,100%{ width: 100%; opacity: 1;}
 }
 
@@ -337,8 +337,8 @@
 */
 
 .socials{
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 12%;
+  padding-right: 12%;
   position: relative;
   z-index: 6;
   display: flex;

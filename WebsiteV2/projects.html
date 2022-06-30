@@ -21,6 +21,16 @@
 			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
 		}
+		.word{
+			position: relative;
+			z-index: 5;
+			margin: auto;
+			color: white;
+			font-size: 3vh;
+			text-align: center;
+			font-weight: 100;
+			font-family: "Stellar", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
 		h3{
 			font-size: 3vh;
 		}
@@ -83,10 +93,10 @@
 			z-index: 5;
 		}
 		.experiencesWrap{
-			padding-top: 10vh;
-			padding-left: 3%;
-			padding-right: 3%;
-			padding-bottom: 5%;
+			padding-top: 3%;
+			padding-left: 13%;
+			padding-right: 13%;
+			padding-bottom: 1%;
 			display: flex;
 			flex-wrap:wrap;
 			justify-content: space-around;
@@ -158,28 +168,11 @@
 </div>
 <body>
 
-	
-	<div id="outerExperienceWrap">
-		<h1>Technical Skills</h1>
 
-		<div class="experiencesWrap">
-			<img src="icons/Python_logo.png" style="height: 60px; width: auto;">
-			<img src="icons/pytorch-logo.png" style="margin-left: 10px; height: 55px; width: auto;">
-			<img src="icons/javascript_logo.png" style="height: 65px; width: auto;">
-			<img src="icons/Selenium_Logo.png" style="height: 60px; width: auto;">
-			<img src="icons/C_Logo.png" style="height: 60px; width: auto; padding-left: 10px;">
-			<img src="icons/cpp_logo.png" style="height: 60px; width: auto; padding-left: 10px;">
-			<img src="icons/java-logo.png" style="height: 70px; width: auto;">
-			<img src="icons/postgre_logo.webp" style="height: 60px; width: auto;">
-			<img src="icons/k8s_logo.png" style="height: 60px; width: auto;">
-			<img src="icons/docker-logo.png" style="height: 50px; width: auto; padding-top: 10px;">
-		</div>
-	</div>
+    <!-- SPACING -->
+    <div style="height: 100px;"></div>
 
-
-
-	<div class="outerProjectWrap">
-  	<h1>Projects</h1>
+	<h1>Projects</h1>
 	<div id='projectsWrap'>
 		<div id='projectWrap'>
 			<div class="btn">
@@ -209,7 +202,7 @@
 					<p>Designed an AI program that can play Google Chrome's dino game by itself. Created an interface between Chrome and our program using Selenium. Collected a large number of screenshots of human gameplay with human inputs at the time to train our core model, which was constructed with a feedforward neural network.</p>
 					<div id="iconWrap">
 						<img src="icons/Python_logo.png" style="height: 60px; width: auto;">
-						<img src="icons/javascript_logo.png" style="height: 65px; width: auto;">
+						<img src="icons/javascript_logo.png" style="height: 65px; width: auto; padding-left: 5px; padding-right: 10px;">
 						<img src="icons/Selenium_Logo.png" style="height: 60px; width: auto;">
 					</div>
 				</span>
@@ -274,9 +267,34 @@
 	</div>
 
 
+	
+	<div id="outerExperienceWrap">
+		<h5> My Skillset </h5>
+		<div class="experiencesWrap">
+			<img src="icons/Python_logo.png" style="height: 60px; width: auto;">
+			<img src="icons/pytorch-logo.png" style="margin-left: 10px; height: 55px; width: auto;">
+			<img src="icons/Selenium_Logo.png" style="height: 60px; width: auto;">
+			<img src="icons/opencv_logo.png" style="margin-left: 10px; height: 55px; width: auto;">
+			<img src="icons/html_logo.png" style="height: 60px; width: auto; padding-top: 4px;">
+			<img src="icons/CSS3_logo.png" style="height: 60px; width: auto; padding-top: 4px;">
+			<img src="icons/javascript_logo.png" style="height: 65px; width: auto;">
+		</div>
+		<div class="experiencesWrap">
+			<img src="icons/C_Logo.png" style="height: 60px; width: auto; padding-left: 10px;">
+			<img src="icons/cpp_logo.png" style="height: 60px; width: auto; padding-left: 10px;">
+			<img src="icons/java-logo.png" style="height: 70px; width: auto;">
+			<img src="icons/postgre_logo.webp" style="height: 60px; width: auto;">
+			<img src="icons/k8s_logo.png" style="height: 60px; width: auto;">
+			<img src="icons/docker-logo.png" style="height: 50px; width: auto; padding-top: 10px;">
+		</div>
+	</div>
+
+    <!-- SPACING -->
+    <div style="height: 200px;"></div>
+
 
     <div class="socials">
-		<div style="height: 10px; width: 100%; text-align: center;">
+		<div style="height: 20px; width: 100%; text-align: center;">
 		  <span class="horizontal_bar"></span>
 		</div>
 		<div class="buttonWrap">

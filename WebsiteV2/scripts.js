@@ -1,3 +1,4 @@
+
 /*
 #####################################################################################################################
 #####################################################################################################################
@@ -67,32 +68,12 @@ function horizontal_bar_animation(){
   observer.observe(document.querySelector('.socials'));
 }
 
-function horizontal_bar_animation2(){
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const square = entry.target.querySelector('.horizontal_bar');
-
-      if (entry.isIntersecting) {
-        square.classList.add('horizontal_expansion');
-      return; // if we added the class, exit the function
-      }
-
-      // We're not intersecting, so remove the class!
-      square.classList.remove('horizontal_expansion');
-    });
-  });
-
-  observer.observe(document.querySelector('#projectsWrap'));
-}
-
 
 window.addEventListener("scroll", fly_in_animation);
 window.addEventListener("scroll", vertical_bar_animation);
 window.addEventListener("scroll", horizontal_bar_animation);
-window.addEventListener("scroll", horizontal_bar_animation2);
 
 // To check the scroll position on page load
 fly_in_animation()
 vertical_bar_animation();
 horizontal_bar_animation();
-horizontal_bar_animation2();
