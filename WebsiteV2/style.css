@@ -243,6 +243,12 @@
   animation-fill-mode: forwards;
 }
 
+.flyIn2{
+  /* fade in animation */
+  animation: flyIn2 8s ease-out;
+  animation-fill-mode: forwards;
+}
+
 @keyframes flyIn{
   0%{
     letter-spacing: 2.2vw;
@@ -254,6 +260,16 @@
   }
 }
 
+@keyframes flyIn2{
+  0%{
+    letter-spacing: 8vw;
+    opacity: 0;
+  }
+  30%, 100%{
+    letter-spacing: 0.5vw;
+    opacity: 1;
+  }
+}
 
 /*
 #####################################################################################################################
