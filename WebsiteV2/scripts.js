@@ -6,8 +6,27 @@
 #####################################################################################################################
 #####################################################################################################################
 */
-
+/* For Index page */
 function fly_in_animation(){
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square = entry.target.querySelector('.header');
+
+      if (entry.isIntersecting) {
+        square.classList.add('flyIn');
+      return; // if we added the class, exit the function
+      }
+
+      // We're not intersecting, so remove the class!
+      square.classList.remove('flyIn');
+    });
+  });
+
+  observer.observe(document.querySelector('.title'));
+}
+
+/* For projects page */
+function fly_in_animation2(){
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const square = entry.target.querySelector('.header');
