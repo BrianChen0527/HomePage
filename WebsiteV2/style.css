@@ -338,9 +338,9 @@
 
 .socials{
   padding-left: 12%;
-  padding-right: 12%;
+  padding-right: 12%; 
   position: relative;
-  z-index: 6;
+  z-index: 5;
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
