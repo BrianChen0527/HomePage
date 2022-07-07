@@ -14,7 +14,7 @@
 			font-size: 7vh;
 			text-align: center;
 			font-weight: 100;
-			font-family: "Ailerons", "Helvetica Neue", sans-serif;
+			font-family: "Ailerons", "Ailerons2", "Helvetica Neue", sans-serif;
 			letter-spacing: 1vw;
 			/* fade in animation */
 			animation: fadeInAnimation ease 1s;
@@ -29,7 +29,7 @@
 			font-size: 3vh;
 			text-align: center;
 			font-weight: 100;
-			font-family: "Stellar", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			font-family: "Stellar", "Stellar2", 'Arial Narrow Bold', sans-serif;
 		}
 		h3{
 			font-size: 3vh;
@@ -59,7 +59,7 @@
 			z-index: 4;
 			text-align: center;
 			font-weight: lighter;
-			font-family: "Ailerons", "Helvetica Neue", sans-serif;
+			font-family: "Ailerons", "Ailerons2", "Helvetica Neue", sans-serif;
 			
 		}
   
@@ -83,12 +83,9 @@
 			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
         }
-
-		.projectTitle{
-			min-height: 50px;
-		}
 		.header{
-			font-family: 'Ailerons';
+			opacity: 0;
+			white-space: nowrap;
 		}
 
 		#outerExperienceWrap{
@@ -136,6 +133,13 @@
 			justify-content: center;
 			/*box-shadow: 0 0 3pt 2pt #3CB4D2;*/
 		}
+		.rotateimg90 {
+			-webkit-transform:rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
 		#iconWrap{
 			width: 100%;
 			height: 90px;
@@ -177,33 +181,58 @@
 
 
     <!-- SPACING -->
-    <div style="height: 100px;"></div>
-
-	<div class="projectTitle">
-		<h1 class="header flyIn2">Projects</h1>
+    <div style="height: 100px;">
+		<a href="index.html"><img class="rotateimg90" src="icons/arrow.png" style="width: 30px; height: auto; position: relative; z-index: 5;"></a>
+	</div>
+	<div class="titleWrap">
+		<h1 class="header flyIn">Projects</h1>
 	</div>
 	<div id='projectsWrap'>
-		<div id='projectWrap'>
-			<div class="btn">
-				<span class="noselect">
-					<br><br><h5>GAN Face Generator</h5><br>
-					<p>Created a deep learning face generator that generates fictional anime character faces using a Generative Adversarial Network (GAN) in Pytorch. The generator model was built using a transposed-convolutional neural network and the discriminator model was built using a deep convolutional neural network. Together they were trained with Kaggle's anime face dataset. </p>
-					<div id="iconWrap">
-						<img src="icons/Python_logo.png" style="height: 60px; width: auto;">
-						<img src="icons/pytorch-logo.png" style="margin-left: 10px; height: 55px; width: auto;">
-					</div>
-				</span>
+		<a href="https://github.com/BrianChen0527/Pytorch" style="text-decoration: none;">
+			<div id='projectWrap'>
+				<div class="btn">
+					<span class="noselect">
+						<br><br><h5>GAN Face Generator</h5><br>
+						<p>Created a deep learning face generator that generates fictional anime character faces using a Generative Adversarial Network (GAN) in Pytorch. The generator model was built using a transposed-convolutional neural network and the discriminator model was built using a deep convolutional neural network. Together they were trained with Kaggle's anime face dataset. </p>
+						<div id="iconWrap">
+							<img src="icons/Python_logo.png" style="height: 60px; width: auto;">
+							<img src="icons/pytorch-logo.png" style="margin-left: 10px; height: 55px; width: auto;">
+						</div>
+					</span>
+				</div>
 			</div>
-		</div>
-  		<div id='projectWrap'>
-			<div class="btn">
-				<span class="noselect">
-					<br><h5>Autonomous Pi- Car</h5><br>
-					<p>Built a custom RC car with a webcam on top and raspberyPi inside. Utilized tensorflow and OpenCV to construct an autonomous driving program that drives within lane lines and adjusts speed according to speed signs. Also used the CIFAR100 dataset to train a convolutional neural network (CNN) model that stops the car to stop when it recognizes obstacles such as pedestrians on the road.</p>
-					<div id="iconWrap"><img src="icons/Python_logo.png" style="height: 60px; width: auto;"> <img src="icons/opencv_logo.png" style="margin-left: 10px; height: 55px; width: auto;"> </div>
-				</span>
+		</a>
+		<a href="https://github.com/BrianChen0527/AzureWebapp" style="text-decoration: none;">
+			<div id='projectWrap'>
+				<div class="btn">
+					<span class="noselect">
+						<br><br><h5>Azure Calculator Web App</h5><br>
+						<p>Built a calculator web application using Django.
+							Hosted it on Azure App service and stored API requests in Azure PostgreSQL flexible database. 
+							Containerized and deployed the web application with docker and Azure Pipelines.
+							Set up Azure application insights to monitor my web application.
+							Stored database information and passwords on an Azure Key Vault. </p>
+						<div id="iconWrap">
+							<img src="icons/Python_logo.png" style="height: 60px; width: auto;">
+							<img src="icons/azure_logo.png" style="margin-left: 10px; height: 55px; width: auto;">			
+							<img src="icons/postgre_logo.webp" style="margin-left: 10px; height: 60px; width: auto;">
+
+						</div>
+					</span>
+				</div>
 			</div>
-		</div>
+		</a>
+		<a href="https://github.com/BrianChen0527/AutonomousDriving" style="text-decoration: none;">
+			<div id='projectWrap'>
+				<div class="btn">
+					<span class="noselect">
+						<br><h5>Autonomous Pi- Car</h5><br>
+						<p>Built a custom RC car with a webcam on top and raspberyPi inside. Utilized tensorflow and OpenCV to construct an autonomous driving program that drives within lane lines and adjusts speed according to speed signs. Also used the CIFAR100 dataset to train a convolutional neural network (CNN) model that stops the car to stop when it recognizes obstacles such as lego pedestrians on the road.</p>
+						<div id="iconWrap"><img src="icons/Python_logo.png" style="height: 60px; width: auto;"> <img src="icons/opencv_logo.png" style="margin-left: 10px; height: 55px; width: auto;"> </div>
+					</span>
+				</div>
+			</div>
+		</a>
   		<div id='projectWrap'>
 			<div class="btn">
 				<span class="noselect">
@@ -220,59 +249,59 @@
   		<div id='projectWrap'>
 			<div class="btn">
 				<span class="noselect">
-					<br><h5>Optimal Tourist RoutE</h5><br>
-					<p>Constructed a program which, given the coordinates of a list of tourist sites, finds the shortest path that connects all of them. Algorithm constructed using permutation generation and pruning with nearest insertion TSP (traveling salesman problem), backtracking, and branch & bound. </p>
-					<div id="iconWrap"><img src="icons/cpp_logo.png" style="height: 60px; width: auto; padding-left: 10px;"> </div>
-				</span>
-			</div>
-		</div>
-  		<div id='projectWrap'>
-			<div class="btn">
-				<span class="noselect">
 					<br><h5>Smart Elevator</h5><br>
 					<p>The elevators game allows the player to control elevators in a building with the goal of delivering the most people to their desired destination floors while minimizing the wait times of those people. Created an artificial intelligence program that moves the elevators in a manner that maximized people transported while minimizing their wait times.</p>
 					<div id="iconWrap"><img src="icons/cpp_logo.png" style="height: 60px; width: auto; padding-left: 10px;"> </div>
 				</span>
 			</div>
 		</div>
-  		<div id='projectWrap'>
-			<div class="btn">
-				<span class="noselect">
-					<br><h5>Ethical Hacking</h5><br>
-					<p>Built backdoors, keyloggers, vulnerability scanners, email scrapers, and ARP spoofers. Fun fact: I installed a backdoor on my little sister's laptop  to monitor her screen with her her knowing so my parents could make sure she wasn't watching Korean TV shows when she should be doing homework.</p>
-					<div id="iconWrap"><img src="icons/Python_logo.png" style="height: 60px; width: auto;"> </div>
-				</span>
+		<a href="https://github.com/BrianChen0527/PythonHacking" style="text-decoration: none;">
+			<div id='projectWrap'>
+				<div class="btn">
+					<span class="noselect">
+						<br><h5>Ethical Hacking</h5><br>
+						<p>Built backdoors, keyloggers, vulnerability scanners, email scrapers, and ARP spoofers. Fun fact: I installed a backdoor on my little sister's laptop  to monitor her screen with her her knowing so my parents could make sure she wasn't watching Korean TV shows when she should be doing homework.</p>
+						<div id="iconWrap"><img src="icons/Python_logo.png" style="height: 60px; width: auto;"> </div>
+					</span>
+				</div>
 			</div>
-		</div>
-  		<div id='projectWrap'>
-			<div class="btn">
-				<span class="noselect">
-					<br><h5>SQL simulator</h5><br>
-					<p>Designed and wrote a program that emulates a relational database with an interface based on a subset of a standard query language (SQL). Evaluated the runtime and storage tradeoffs for storing and accessing data contained in different data structures.</p>
-					<div id="iconWrap"><img src="icons/postgre_logo.webp" style="height: 60px; width: auto;"><img src="icons/cpp_logo.png" style="height: 60px; width: auto; padding-left: 10px;"> </div>
-				</span>
+		</a>
+		<a href="https://github.com/BrianChen0527/SQL_simulator" style="text-decoration: none;">
+			<div id='projectWrap'>
+				<div class="btn">
+					<span class="noselect">
+						<br><h5>SQL simulator</h5><br>
+						<p>Designed and wrote a program that emulates a relational database with an interface based on a subset of a standard query language (SQL). Evaluated the runtime and storage tradeoffs for storing and accessing data contained in different data structures.</p>
+						<div id="iconWrap"><img src="icons/postgre_logo.webp" style="height: 60px; width: auto;"><img src="icons/cpp_logo.png" style="height: 60px; width: auto; padding-left: 10px;"> </div>
+					</span>
+				</div>
 			</div>
-		</div>
-  		<div id='projectWrap'>
-			<div class="btn">
-				<span class="noselect">
-					<br><h5>Pipelined<br>
-					RISC-V CPU</h5><br>
-					<p>Implemented a compiler that compiles assembly code into machine code, a linker that combines multiple machine code files, and a pipelined processor with internal data forwarding. Finally, a simulator combines these programs to simulate a complete 32-bit RISC processor that outputs the states of the processor and main memory along the way. </p>
-					<div id="iconWrap"><img src="icons/C_Logo.png" style="height: 60px; width: auto;"><img src="icons/assembly_logo.png" style="height: 60px; width: auto; padding-left: 10px;"> </div>
-				</span>
+		</a>
+		<a href="https://github.com/BrianChen0527/PipelinedRiscV" style="text-decoration: none;">
+			<div id='projectWrap'>
+				<div class="btn">
+					<span class="noselect">
+						<br><h5>Pipelined<br>
+						RISC-V CPU</h5><br>
+						<p>Implemented a compiler that compiles assembly code into machine code, a linker that combines multiple machine code files, and a pipelined processor with internal data forwarding. Finally, a simulator combines these programs to simulate a complete 32-bit RISC processor that outputs the states of the processor and main memory along the way. </p>
+						<div id="iconWrap"><img src="icons/C_Logo.png" style="height: 60px; width: auto;"><img src="icons/assembly_logo.png" style="height: 60px; width: auto; padding-left: 10px;"> </div>
+					</span>
+				</div>
 			</div>
-		</div>
-  		<div id='projectWrap'>
-			<div class="btn">
-				<span class="noselect">
-					<br><h5>Hot100 web scraper</h5><br>
-					<p>Designed an web-scraping program that can collect all the (or a specified number of) top songs from a specified period of time from the hot 100 website (https://www.billboard.com/charts
-					/hot-100/). Designed another web-scraping program that can retrieve the lyrics to all the songs collected from the previous program.</p>
-					<div id="iconWrap"><img src="icons/Python_logo.png" style="height: 60px; width: auto;"> <img src="icons/Selenium_Logo.png" style="margin-left: 10px; height: 59px; width: auto;"></div>
-				</span>
+		</a>
+			
+		<a href="https://github.com/BrianChen0527/Hot100WebScrape" style="text-decoration: none;">
+			<div id='projectWrap'>
+				<div class="btn">
+					<span class="noselect">
+						<br><h5>Hot100 web scraper</h5><br>
+						<p>Designed an web-scraping program that can collect all the (or a specified number of) top songs from a specified period of time from the hot 100 website (https://www.billboard.com/charts
+						/hot-100/). Designed another web-scraping program that can retrieve the lyrics to all the songs collected from the previous program.</p>
+						<div id="iconWrap"><img src="icons/Python_logo.png" style="height: 60px; width: auto;"> <img src="icons/Selenium_Logo.png" style="margin-left: 10px; height: 59px; width: auto;"></div>
+					</span>
+				</div>
 			</div>
-		</div>
+		</a>
 	</div>
 
 
@@ -289,7 +318,7 @@
 			<img src="icons/javascript_logo.png" style="height: 65px; width: auto;">
 		</div>
 		<div class="experiencesWrap">
-			<img src="icons/C_Logo.png" style="height: 60px; width: auto; padding-left: 10px;">
+			<img src="icons/azure_logo.png" style="height: 60px; width: auto; padding-left: 10px;">
 			<img src="icons/cpp_logo.png" style="height: 60px; width: auto; padding-left: 10px;">
 			<img src="icons/java-logo.png" style="height: 70px; width: auto;">
 			<img src="icons/postgre_logo.webp" style="height: 60px; width: auto;">

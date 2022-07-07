@@ -8,7 +8,12 @@
 @font-face {
   font-family: 'Ailerons';
   src: URL('Fonts/Ailerons/Ailerons-Regular.otf') format('truetype');
-}  
+}
+@font-face {
+  font-family: 'Ailerons2';
+  src: URL('../Yngchch.github.io/Fonts/Ailerons/Ailerons-Regular.otf') format('truetype');
+}    
+
 @font-face {
   font-family: 'goodTimes';
   src: URL('Fonts/good-times/goodTimes.otf') format('truetype');
@@ -25,7 +30,10 @@
   font-family: 'Stellar';
   src: URL('Fonts/PPStellar-Free_for_personal_use_v1.7/PPStellar-Free\ for\ personal\ use\ v1.7/PPStellar-Light.otf') format('truetype');
 } 
-
+@font-face {
+  font-family: 'Stellar2';
+  src: URL('../Yngchch.github.io/Fonts/PPStellar-Free_for_personal_use_v1.7/PPStellar-Free\ for\ personal\ use\ v1.7/PPStellar-Light.otf') format('truetype');
+} 
 @font-face {
   font-family: 'Calibre';
   src: URL('Fonts/Calibre/CalibreSuperCondensed-Regular.otf') format('truetype');
@@ -243,12 +251,6 @@
   animation-fill-mode: forwards;
 }
 
-.flyIn2{
-  /* fade in animation */
-  animation: flyIn2 8s ease-out;
-  animation-fill-mode: forwards;
-}
-
 @keyframes flyIn{
   0%{
     letter-spacing: 2.2vw;
@@ -260,16 +262,6 @@
   }
 }
 
-@keyframes flyIn2{
-  0%{
-    letter-spacing: 8vw;
-    opacity: 0;
-  }
-  30%, 100%{
-    letter-spacing: 0.5vw;
-    opacity: 1;
-  }
-}
 
 /*
 #####################################################################################################################
@@ -354,12 +346,13 @@
 
 .socials{
   padding-left: 12%;
-  padding-right: 12%; 
+  padding-right: 12%;
   position: relative;
-  z-index: 5;
+  z-index: 6;
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
+  background-image: linear-gradient(to bottom, rgba(225, 0, 255, 0), #89009b49);
 }
 
 /*

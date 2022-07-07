@@ -32,16 +32,16 @@ function fly_in_animation2(){
       const square = entry.target.querySelector('.header');
 
       if (entry.isIntersecting) {
-        square.classList.add('flyIn2');
+        square.classList.add('flyIn');
       return; // if we added the class, exit the function
       }
 
       // We're not intersecting, so remove the class!
-      square.classList.remove('flyIn2');
+      square.classList.remove('flyIn');
     });
   });
 
-  observer.observe(document.querySelector('.projectTitle'));
+  observer.observe(document.querySelector('.titleWrap'));
 }
 /*
 #####################################################################################################################
@@ -92,7 +92,6 @@ window.addEventListener("scroll", fly_in_animation);
 window.addEventListener("scroll", fly_in_animation2);
 window.addEventListener("scroll", vertical_bar_animation);
 window.addEventListener("scroll", horizontal_bar_animation);
-
 // To check the scroll position on page load
 fly_in_animation();
 fly_in_animation2();
