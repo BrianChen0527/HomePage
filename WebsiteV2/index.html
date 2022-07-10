@@ -165,7 +165,8 @@ h1, h2, h3, h4{
 }
   
 h1 {
-  font-size: 10vh;
+  font-size: 6vh;
+  
 }
 
 .header{
@@ -207,12 +208,22 @@ h5{
   line-height: 140%;
 }
 
+/* adjustments for small screen width */
+@media only screen and (max-width: 1200px){
+  h1{
+    font-size: 5vh;
+  }
+} 
+
 /* adjustments for phone screen */
 @media (pointer:coarse) and (max-width: 1200px){
   .buttonWrap{
-    width: 50vh;
+    width: 100vw;
   }
-  
+  .header{
+  opacity: 0;
+  white-space: normal;
+  }
   h1{
     font-size: 16vh;
   }
@@ -220,8 +231,16 @@ h5{
     font-size: 10vh;
   }
   h3{
-    font-size: 5vh;
+    font-size: 6vh;
   }
+  h5{
+    font-size: 4vh;
+  }
+  .flyIn{
+  /* fade in animation */
+  animation: noFlyIn 6s ease-out;
+  animation-fill-mode: forwards;
+}
 } 
 </style>
 
@@ -236,7 +255,7 @@ h5{
     <div class="container">
       <div class="titleWrap">
         <div class="title">
-          <h1 class="header flyIn" style="font-size: 6vh; margin-top: 0;">Hello, I'm Brian Chen.</h1>
+          <h1 class="header flyIn">Hello, I'm Brian Chen.</h1>
         </div>
         <!--<h2>Junior Computer Science Student at University of Michigan</h2>-->
       </div>
@@ -252,9 +271,9 @@ h5{
           </div>
         </div>
         <div class="textWrap">
-          <span class="introText">My name is Brian Ying-Chi Chen and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a software engineer or software developer position.
-            I would describe my personality as curious, passionate and determined. I am motivated to learn new skills, and I excel in collaborative team environments.
-            Please check out my <a class="animate-charcter in_text_link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">RESUME</a> and reach out with opportunities or if you'd like to connect :D
+          <span class="introText">My name is Brian Ying-Chi Chen and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a position as a software engineer or developer.
+            I am curious, passionate and determined. I am motivated when it comes to learning new skills, and I excel in collaborative team environments.
+            Please check out my <a class="animate-charcter in_text_link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">RESUME</a> and reach out with opportunities or if you would like to connect :D
           </span>
         </div>
       </div>
@@ -368,7 +387,7 @@ h5{
         </a>
       </div>
       <div style="width: 100%;">
-        <h3 style="font-family: 'Stellar'; font-size: 2vh;">(+1) 734 604 8505 &emsp;&emsp;|&emsp;&emsp; Ann Arbor, MI, USA</h3>
+        <h5 style="font-family: 'Stellar';">(+1) 734 604 8505 &emsp;&emsp;|&emsp;&emsp; Ann Arbor, MI, USA</h5>
       </div>
     </div>
   </div>
