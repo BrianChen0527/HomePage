@@ -10,13 +10,14 @@
   --dark_blue: #050E16;
 };
 
-
 body {
   font-size: 18px;
   font-family: "Ailerons", "Ailerons2", "Helvetica Neue", sans-serif;
   position: relative;
   z-index: 4;
+  
 }  
+html,body{margin:0;padding:0}
 
 /* Additional styling */
 .bar{
@@ -56,19 +57,22 @@ body {
 }
 
 .AboutMe{
-  height: 70vh;
+  min-height: 60vh;
   margin-left: 3vw;
   position: relative;
   text-align: center;
   z-index: 5;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .AboutMeLeft{
   height: 90%;
-  width: 40%;
+  max-width: 40%;
+  min-width: 480px;
   margin-left: 10px;
+  margin-bottom: 15vh;
   background-color: rgba(0,0,0, 0.6);
   padding-left: 3vw;
   text-align: left;
@@ -78,15 +82,11 @@ body {
 .textWrap{
   position: relative;
   z-index: 7;
-  display: block;
 }
-
-
-
 .AboutMeRight{
-  height: 90%;
-  width: 60%;
-  min-width: 250px;
+  min-height: 90%;
+  max-width: 50%;
+  min-width: 600px;
   background-color: rgba(0,0,0, 0.6);
   text-align: center;
   position: relative;
@@ -97,17 +97,19 @@ body {
 }
 
 .Experience{
-  height: 70vh;
+  min-height: 60vh;
   position: relative;
   text-align: center;
   margin-right: 3vw;
   z-index: 5;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap-reverse;
 }
 .ExperienceLeft{
-  height: 90%;
-  width: 60%;
+  min-height: 90%;
+  max-width: 50%;
+  min-width: 600px;
   position: relative;
   z-index: 6;
   display: flex;
@@ -116,8 +118,10 @@ body {
 }
 .ExperienceRight{
   height: 90%;
-  width: 40%;
+  max-width: 40%;
+  min-width: 480px;
   margin-right: 10px;
+  margin-bottom: 15vh;
   padding-right: 3vw;
   background-color: rgba(0,0,0, 0.6);
   text-align: right;
@@ -260,93 +264,97 @@ h5{
         <!--<h2>Junior Computer Science Student at University of Michigan</h2>-->
       </div>
       
-    <div class="AboutMe">
-      <span class="vertical_bar" style="vertical-align: middle;"></span>
-      <div class="AboutMeLeft"> 
-        <div class="buttonWrap">
-          <div style="display: flex; ">
-            <a href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx" style="text-decoration: none;">
-              <h4 class="button_text">About Me</h4> 
-            </a>
+      <div class="AboutMe">
+        <div class="vertBarWrap">
+          <span class="vertical_bar" style="vertical-align: middle;"></span>
+        </div>
+        <div class="AboutMeLeft"> 
+          <div class="buttonWrap">
+            <div style="display: flex; ">
+              <a href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx" style="text-decoration: none;">
+                <h4 class="button_text">About Me</h4> 
+              </a>
+            </div>
+          </div>
+          <div class="textWrap">
+            <span class="introText">My name is Brian Ying-Chi Chen and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a position as a software engineer or developer.
+              I am curious, passionate and determined. I am motivated when it comes to learning new skills, and I excel in collaborative team environments.
+              Please check out my <a class="animate-charcter in_text_link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">RESUME</a> and reach out with opportunities or if you would like to connect :D
+            </span>
           </div>
         </div>
-        <div class="textWrap">
-          <span class="introText">My name is Brian Ying-Chi Chen and I'm a rising Junior Computer Science student from the University of Michigan. I'm looking for a position as a software engineer or developer.
-            I am curious, passionate and determined. I am motivated when it comes to learning new skills, and I excel in collaborative team environments.
-            Please check out my <a class="animate-charcter in_text_link" href="Ying-Chi_Chen_Resume.docx" download="Ying-Chi_Chen_Resume.docx">RESUME</a> and reach out with opportunities or if you would like to connect :D
-          </span>
+        <div class="AboutMeRight">
+          <img src="icons/sample.jpg" style="height: auto; width: 90%; vertical-align: middle;">
         </div>
       </div>
-      <div class="AboutMeRight">
-        <img src="icons/sample.jpg" style="height: auto; width: 90%; max-width: 650px;">
-      </div>
-    </div>
 
-    <!-- SPACING -->
-    <div style="height: 300px;"></div>
+      <!-- SPACING -->
+      <div style="height: 300px;"></div>
 
-    <div class="Experience">
-      <div class="ExperienceLeft">
-        <img src="icons/sample.jpg" style="height: auto; width: 90%; max-width: 650px;">
-      </div>
-      <div class="ExperienceRight">
-        <div class="buttonWrap">
-          <div style="display: flex; justify-content: right;">
-            <a href="projects.html" style="text-decoration: none;">
-              <h4 class="button_text">Experience</h4> 
-            </a>
+      <div class="Experience">
+        <div class="ExperienceLeft">
+          <img src="icons/sample.jpg" style="height: auto; width: 90%; vertical-align: middle;">
+        </div>
+        <div class="ExperienceRight">
+          <div class="buttonWrap">
+            <div style="display: flex; justify-content: right;">
+              <a href="projects.html" style="text-decoration: none;">
+                <h4 class="button_text">Experience</h4> 
+              </a>
+            </div>
           </div>
+          <div class="textWrap">
+            <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. 
+              I've also interned at tech companies such as Lenovo and Asus as a software engineer.
+              I'm experienced with writing scalable, high-quality code and unit tests with good test coverage.
+              Check out my 
+              <a class="animate-charcter in_text_link" href="https://www.linkedin.com/in/brian-chen-1267b6220/">LinkedIn</a>
+              and my 
+              <a class="animate-charcter in_text_link" href="projects.html" style="animation-delay: 1s;">experience page</a> if you're interested in my technical skills.
+
+            </span> 
+          </div>
+      </div>
+      <div class="vertBarWrap">
+        <span class="vertical_bar" style="vertical-align: middle;"></span>
+      </div>
+      </div>
+      
+      <!-- SPACING -->
+      <div style="height: 100px;"></div>
+
+      <!-- SPACING -->
+      
+      <div style="width: 100%;">
+        <h4 style="text-align: center;">Three Truths & One lie</h4>
+      </div>
+      <div class="TruthsLiesWrap">
+        <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
+          <button id="truth" style="position: relative; z-index: 8; ">
+            I jumped out of a plane 19000 feet in the air last winter vacation.
+          </button>
         </div>
-        <div class="textWrap">
-          <span class="introText" style="text-align: right;">I am proficient in multiple programming languages and I have multiple large-scale programming project experiences. 
-            I've also interned at tech companies such as Lenovo and Asus as a software engineer.
-            I'm experienced with writing scalable, high-quality code and unit tests with good test coverage.
-            Check out my 
-            <a class="animate-charcter in_text_link" href="https://www.linkedin.com/in/brian-chen-1267b6220/">LinkedIn</a>
-             and my 
-             <a class="animate-charcter in_text_link" href="projects.html" style="animation-delay: 1s;">experience page</a> if you're interested in my technical skills.
-
-          </span> 
+        <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
+          <button id="truth" style="position: relative; z-index: 8; ">
+            I tried stir-fried grasshoppers when I traveled to Cambodia (they weren't too bad).
+          </button>
         </div>
-     </div>
-     <span class="vertical_bar" style="vertical-align: middle;"></span>
+        <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
+          <button id="lie" style="position: relative; z-index: 8; ">
+            I've hiked to the top of mount Fuji in Japan before.
+          </button>
+        </div>
+
+        <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
+          <button id="truth" style="position: relative; z-index: 8; ">
+            I encountered multiple sharks while scuba-diving in the coastal reefs of Palau.
+          </button>
+        </div>
+      </div>
+
+      <!-- SPACING -->
+      <div style="height: 300px;"></div>
     </div>
-    
-    <!-- SPACING -->
-    <div style="height: 100px;"></div>
-
-    <!-- SPACING -->
-    
-    <div style="width: 100%;">
-      <h4 style="text-align: center;">Three Truths & One lie</h4>
-    </div>
-    <div class="TruthsLiesWrap">
-      <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
-        <button id="truth" style="position: relative; z-index: 8; ">
-          I jumped out of a plane 19000 feet in the air last winter vacation.
-        </button>
-      </div>
-      <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
-        <button id="truth" style="position: relative; z-index: 8; ">
-          I tried stir-fried grasshoppers when I traveled to Cambodia (they weren't too bad).
-        </button>
-      </div>
-      <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
-        <button id="lie" style="position: relative; z-index: 8; ">
-          I've hiked to the top of mount Fuji in Japan before.
-        </button>
-      </div>
-
-      <div style="width: 60%; min-height: 50px; max-height: 5vh; margin-bottom: 50px;">
-        <button id="truth" style="position: relative; z-index: 8; ">
-          I encountered multiple sharks while scuba-diving in the coastal reefs of Palau.
-        </button>
-      </div>
-    </div>
-
-    <!-- SPACING -->
-    <div style="height: 300px;"></div>
-
     <div class="socials">
       <div style="height: 10px; width: 100%;">
         <span class="horizontal_bar"></span>
@@ -387,11 +395,9 @@ h5{
         </a>
       </div>
       <div style="width: 100%;">
-        <h5 style="font-family: 'Stellar';">(+1) 734 604 8505 &emsp;&emsp;|&emsp;&emsp; Ann Arbor, MI, USA</h5>
+        <h5 style="font-family: 'Stellar'; text-align: center;">(+1) 734 604 8505 &emsp;&emsp;|&emsp;&emsp; Ann Arbor, MI, USA</h5>
       </div>
     </div>
-  </div>
-
-
   </body>
+
 </html>

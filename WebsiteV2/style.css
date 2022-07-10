@@ -128,6 +128,11 @@
 #####################################################################################################################
 */
 
+.vertBarWrap{
+  min-height: 100%; 
+  margin-bottom: 15vh; /* needs to be the same as the margin bottom for about me and experience */
+}
+
 .horizontal_bar{
   display: inline-flex;
   width:  100%;
@@ -158,7 +163,7 @@
   .vertical_bar{
     display: inline-flex;
     width: 2px;
-    height: 85%;
+    height: 100%;
     background-color: white;
     position: relative;
     z-index: 4;
@@ -177,7 +182,7 @@
 
   @keyframes vertical_bar {
     0%,5%{ height: 1px; opacity: 0.5;}
-    90%,100%{ height: 85%; opacity: 1;}
+    90%,100%{ height: 100%; opacity: 1;}
   }
 
 /*
