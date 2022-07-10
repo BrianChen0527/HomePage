@@ -130,7 +130,7 @@
 
 .vertBarWrap{
   min-height: 100%; 
-  margin-bottom: 15vh; /* needs to be the same as the margin bottom for about me and experience */
+  margin-bottom: 10vh; /* needs to be the same as the margin bottom for about me and experience */
 }
 
 .horizontal_bar{
@@ -359,6 +359,7 @@
 */
 
 .socials{
+  text-align: center;
   padding-left: 12%;
   padding-right: 12%;
   position: relative;
